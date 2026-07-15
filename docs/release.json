@@ -1,12 +1,11 @@
 {
   "version": "1.0.0",
-  "build": "13",
-  "tag": "v1.0.0-13",
-  "filename": "ReleaseSeal-1.0.0-13.dmg",
-  "sha256": "79ba9e6482227a5a41bc27b00add0dad24b2f3d2efcad2b8f01eae0da60fd9aa",
+  "build": "14",
+  "tag": "v1.0.0-14",
+  "filename": "ReleaseSeal-1.0.0-14.dmg",
+  "sha256": "1acd19b68511b8922eda8c61a5d16aaa12f1ee680da251e80cc083f38d12b0b8",
   "certificateSHA256": "5b3320483fc794488cc7caa4c3b6eca9178b7350a20fb38190b106742206b333",
-  "databaseVersion": "2026.07.14.1",
-  "databaseSHA256": "f1b24f1863f583ef78c78d9c1c3eb93e9fa51d8e494ff30690d7627a92ec3b6a",
+  "databaseVersion": "2026.07.15.1",
+  "databaseSHA256": "dffe4c70a7d4fea1de42bbd4c5212157cd844174700675633417530ce02800d8",
   "downloadURL": "https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest"
 }
-
