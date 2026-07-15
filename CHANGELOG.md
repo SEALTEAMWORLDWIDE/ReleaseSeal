@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 (13)
+## 1.0.0 (14)
 
 - Initial public ReleaseSeal distribution
 - Offline GUI and command-line scanning for DMG, PKG, ZIP, and app artifacts

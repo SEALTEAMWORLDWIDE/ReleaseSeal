@@ -65,7 +65,7 @@ h2 { margin-bottom: 14px; font-size: clamp(1.65rem, 4vw, 2.15rem); }
 
 .doc-section { padding: 62px 0; border-bottom: 1px solid var(--line); }
 .section-heading { max-width: 760px; margin-bottom: 30px; }
-.section-heading > p:last-child, .split-section > div > p { color: var(--muted); }
+.section-heading > p:last-child, .split-section > div > p:not(.section-label) { color: var(--muted); }
 .section-heading > p:last-child { margin-bottom: 0; }
 
 .table-wrap { overflow-x: auto; }
