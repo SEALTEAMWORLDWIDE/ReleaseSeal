@@ -1,0 +1,63 @@
+name: Certificate evidence submission
+description: Propose a release-group certificate for review without uploading release files.
+title: "Certificate candidate: "
+labels: ["evidence", "certificate"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not upload or link to releases, cracks, keys, patchers, or malware. Submit only certificate metadata and safe reproducible evidence.
+  - type: input
+    id: label
+    attributes:
+      label: Proposed label
+      placeholder: Release group or signer label
+    validations:
+      required: true
+  - type: dropdown
+    id: pin_type
+    attributes:
+      label: Pin type
+      options:
+        - root-sha256
+        - leaf-sha256
+    validations:
+      required: true
+  - type: input
+    id: fingerprint
+    attributes:
+      label: SHA-256 certificate fingerprint
+      description: Enter 64 lowercase hexadecimal characters.
+    validations:
+      required: true
+  - type: textarea
+    id: certificate
+    attributes:
+      label: Certificate subject and expiration
+      description: Include the complete subject, expiration date, and whether the certificate is self-signed or chained.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance
+      description: Explain how the release-group identity was established without linking to distributable payloads.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducible evidence
+      description: Paste redacted inspection commands and output. Remove private paths and usernames.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not upload or link to release payloads, cracks, keys, patchers, or malware.
+          required: true
+        - label: I reviewed the submission for private paths and personal information.
+          required: true
+

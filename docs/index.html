@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReleaseSeal checks macOS release signatures, certificate fingerprints, exact hashes, tracked files, and known compromised artifacts.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#06152b">
+  <title>ReleaseSeal - macOS release evidence checker</title>
+  <link rel="icon" href="assets/releaseseal-app-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="ReleaseSeal home">
+        <img src="assets/releaseseal-mark.svg" alt="" width="38" height="38">
+        <span>ReleaseSeal</span>
+        <small>v1.0.0</small>
+      </a>
+      <div class="nav-links">
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Releases</a>
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal">Repository</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="project-intro" aria-labelledby="project-title">
+      <h1 id="project-title">ReleaseSeal</h1>
+      <p class="tagline">Source Evidence &amp; Authenticity Layer</p>
+      <p class="summary">ReleaseSeal reads DMG, PKG, ZIP, and app artifacts. It reports container hashes, code-signing validity, certificate fingerprints, exact-artifact matches, database-defined checks for tracked files, and known compromised hashes. Scanned software is never executed during inspection.</p>
+      <div class="actions">
+        <a class="button" href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Download</a>
+        <a href="#verify">Release verification</a>
+      </div>
+      <dl class="project-facts">
+        <div><dt>System</dt><dd>macOS 12 (Monterey) or later</dd></div>
+        <div><dt>Architecture</dt><dd>Universal 2 (arm64 and x86_64)</dd></div>
+      </dl>
+    </section>
+
+    <section class="doc-section" aria-labelledby="results-title">
+      <header class="section-heading">
+        <p class="section-label">Output</p>
+        <h2 id="results-title">Result classification</h2>
+        <p>Each scan reports one of four states. The state describes observed identity and integrity evidence. It is not a malware-analysis verdict.</p>
+      </header>
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr><th scope="col">State</th><th scope="col">Meaning</th></tr>
+          </thead>
+          <tbody>
+            <tr class="green">
+              <th scope="row"><span class="status-dot"></span><strong>Seal of Approval</strong><small>Recognized</small></th>
+              <td>Recognized identity or exact-artifact evidence matched, and applicable outer integrity checks passed.</td>
+            </tr>
+            <tr class="yellow">
+              <th scope="row"><span class="status-dot"></span><strong>Seal is broken</strong><small>Integrity failure</small></th>
+              <td>Signed content changed or failed its integrity check. Affected evidence is reported where possible.</td>
+            </tr>
+            <tr class="purple">
+              <th scope="row"><span class="status-dot"></span><strong>Unknown Waters</strong><small>Unrecognized</small></th>
+              <td>Evidence may validate, but the identity is not recognized or no verifiable identity is available.</td>
+            </tr>
+            <tr class="red">
+              <th scope="row"><span class="status-dot"></span><strong>Known Bad Catch</strong><small>Compromised</small></th>
+              <td>A certificate or artifact hash matched reviewed compromised or revoked evidence.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="checks" class="doc-section" aria-labelledby="checks-title">
+      <header class="section-heading">
+        <p class="section-label">Inspection</p>
+        <h2 id="checks-title">Checks performed</h2>
+        <p>Container evidence and internal code-signing evidence are reported separately.</p>
+      </header>
+      <dl class="check-table">
+        <div><dt>Container layers</dt><dd>DMG, PKG, ZIP, and app layers are identified and reported independently.</dd></div>
+        <div><dt>Certificate identity</dt><dd>Leaf and root SHA-256 fingerprints are compared with reviewed signer records.</dd></div>
+        <div><dt>Signature integrity</dt><dd>macOS checks whether signed bundle contents still match the signature seal.</dd></div>
+        <div><dt>Exact artifacts</dt><dd>Complete DMG, PKG, and ZIP files can match reviewed SHA-256 records byte for byte.</dd></div>
+        <div><dt>Compromised evidence</dt><dd>Reviewed MD5, SHA-1, and SHA-256 compromise records take precedence over positive matches.</dd></div>
+        <div><dt>Tracked files</dt><dd>Selected filenames can receive additional file-type, size, and hash checks wherever they are found.</dd></div>
+      </dl>
+      <aside class="scope-note">
+        <strong>Scope</strong>
+        <p>ReleaseSeal is not a malware scanner, sandbox, or behavioral analyzer. It reports identity and integrity evidence and does not declare inspected software harmless.</p>
+      </aside>
+    </section>
+
+    <section class="doc-section split-section" aria-labelledby="cli-title">
+      <div>
+        <p class="section-label">Command line</p>
+        <h2 id="cli-title">CLI</h2>
+        <p>The application bundle includes the <code>releaseseal</code> command-line binary. Its symlink can be installed from the ReleaseSeal application menu.</p>
+        <p>Text, verbose, JSON, and candidate-JSON output are available. Candidate output records unknown evidence without modifying the database.</p>
+        <a class="inline-link" href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/blob/main/README.md#command-line-tool">Command-line documentation</a>
+      </div>
+      <div class="terminal" aria-label="ReleaseSeal command-line examples">
+        <div class="terminal-title">releaseseal</div>
+        <pre><code>$ releaseseal "$HOME/Downloads/release.dmg"
+$ releaseseal --deep --verbose "release.dmg"
+$ releaseseal --json "release.pkg" &gt; report.json
+$ releaseseal --candidate-json "release.zip"
+$ releaseseal --version</code></pre>
+      </div>
+    </section>
+
+    <section id="verify" class="doc-section" aria-labelledby="verify-title">
+      <header class="section-heading">
+        <p class="section-label">Distribution</p>
+        <h2 id="verify-title">Release verification</h2>
+        <p>The DMG, checksum, and public signing certificate are attached to the same GitHub Release.</p>
+      </header>
+      <div class="verify-grid">
+        <div class="terminal">
+          <div class="terminal-title">ReleaseSeal 1.0.0 (13)</div>
+          <pre><code>$ shasum -a 256 ReleaseSeal-1.0.0-13.dmg
+79ba9e6482227a5a41bc27b00add0dad24b2f3d2efcad2b8f01eae0da60fd9aa</code></pre>
+        </div>
+        <dl class="release-facts">
+          <div><dt>Signing identity</dt><dd>SEAL TEAM WORLDWIDE</dd></div>
+          <div><dt>Certificate SHA-256</dt><dd>5b3320483fc79448…206b333</dd></div>
+          <div><dt>Database version</dt><dd>2026.07.14.1</dd></div>
+          <div><dt>Database SHA-256</dt><dd>f1b24f1863f583ef…ec3b6a</dd></div>
+        </dl>
+      </div>
+      <div class="verify-links">
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Release files</a>
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/blob/main/README.md#verify-releaseseal">Verification commands</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 ReleaseSeal</span>
+      <div>
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases">Releases</a>
+        <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/blob/main/LICENSE.md">Licensing</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive security report
+    url: https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/security/advisories/new
+    about: Privately report a vulnerability in ReleaseSeal or its release process.
+

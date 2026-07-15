@@ -1,0 +1,47 @@
+name: Incorrect or conflicting result
+description: Report a suspected database or ReleaseSeal result problem using redacted evidence.
+title: "Result review: "
+labels: ["result-review"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: ReleaseSeal and database version
+      placeholder: ReleaseSeal 1.0.0 (13), database 2026.07.14.1
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Reported verdict
+      options:
+        - Seal of Approval
+        - Seal is broken
+        - Unknown Waters
+        - Known Bad Catch
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Redacted report output
+      description: Remove usernames, private paths, and sensitive filenames before posting.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Why the result may be incorrect
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not upload or link to release payloads, cracks, patchers, keys, or malware.
+          required: true
+        - label: I reviewed the output for personal information.
+          required: true
+

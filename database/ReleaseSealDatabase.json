@@ -1,0 +1,810 @@
+{
+  "schemaVersion": 2,
+  "metadata": {
+    "name": "ReleaseSeal evidence database",
+    "databaseVersion": "2026.07.15.1",
+    "releaseDate": "2026-07-15",
+    "notes": "Trusted entries are allowlist evidence only; compromised entries take precedence."
+  },
+  "trustedCertificates": [
+    {
+      "type": "root-sha256",
+      "hash": "43858ea069e6e922d8eab1062d4c16631a1c6ae248efd5511e710d8e8209fdc7",
+      "label": "Dokdo, Beautiful Island",
+      "subject": "/CN=Dokdo, Beautiful Island/O=Dokdo, Beautiful Island/OU=For Educational Purposes Only/ST=Beautiful Island/C=DE/L=Dokdo",
+      "expires": "2035-09-20T02:00:00Z",
+      "notes": "Self-signed release-group certificate observed on the app bundle in the cited sample.",
+      "source": "releases/Dokdo/Araxis Merge Professional 2026.0 [Dokdo].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "f1516a983975b6c0847c59fa12291b1f16d3a10718d742a3904949b98a2f8ccd",
+      "label": "Antibiotics",
+      "subject": "/CN=Antibiotics/O=MSJ/C=CN",
+      "expires": "2034-06-13T13:08:07Z",
+      "notes": "Self-signed release-group certificate observed on both the DMG and app bundle in the cited sample.",
+      "source": "releases/ATB/Vibe Island 1.0.34 [atb].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "69a62e7cd7fc8da856bf1717ae04992fa3be06df732318583f12dffcd61033eb",
+      "label": "https://macked.app",
+      "subject": "/O=MacKed/OU=https://macked.app/CN=https://macked.app/emailAddress=codesign@macked.app",
+      "expires": "2099-12-31T23:59:59Z",
+      "notes": "Self-signed release-group certificate observed on the app bundle; the embedded common name is https://macked.app.",
+      "source": "releases/MacKed/Vehla 6.3 [MacKed].dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "861b660daec7fb0246375add56083fab34d6d06f27d028e73268c17d2c39ce37",
+      "label": "Developer ID Application: TEAM HCiSO (76TX64X7HC)",
+      "subject": "/C=US/O=TEAM HCiSO/OU=76TX64X7HC/CN=Developer ID Application: TEAM HCiSO (76TX64X7HC)",
+      "expires": "2030-09-01T23:59:59Z",
+      "notes": "Apple-issued Developer ID Application certificate used by TEAM HCiSO on the app bundle; identity is matched only by its leaf fingerprint.",
+      "source": "releases/HCiSO/UltraEdit_25.0.0.11_[HCiSO].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "cdc5c06d2c4e3059beeea8bf37636074d5a397d0b92d20e6d84b4e001ba32971",
+      "label": "TNT",
+      "subject": "/CN=TNT/O=TNT - why join the navy if you can be a pirate/C=RU/emailAddress=tnt4mac@tuta.io",
+      "expires": "2027-06-09T15:37:11Z",
+      "notes": "Self-signed release-group certificate observed on the app bundle in the cited sample.",
+      "source": "releases/TNT/Qbserve_1.91_[TNT].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "23ca38d7ef58a70e8c7991df681a03cf77d8ffb607351b3cc55a21c21d0fb786",
+      "label": "TNT",
+      "subject": "/CN=TNT/O=TNT - why join the navy if you can be a pirate/OU=TNT2019STW/C=RU/emailAddress=tnt4mac@tuta.io",
+      "expires": "2035-05-09T08:37:13Z",
+      "notes": "Self-signed TNT certificate observed on the valid app-bundle seal in the cited sample. The outer DMG is unsigned.",
+      "source": "releases/TNT/Typora_1.10.6_[TNT].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "aa7d3843795bed55acdd443cf7648a275c02ee615d77848efb0d45a467edc073",
+      "label": "TEAM EDiSO",
+      "subject": "/CN=TEAM EDiSO/O=TEAM EDiSO/C=AU/emailAddress=please@fuck.off",
+      "expires": "2035-06-21T23:50:08Z",
+      "notes": "Self-signed release-group certificate observed on the app bundle. Provenance confirmed from a direct EDiSO release.",
+      "source": "releases/EDiSO/OmniOutliner 6.2 [EDiSO].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "90f605071bf3418ae709f1ebd03d98739689d476309b18c42c9462d81fe47def",
+      "label": "aqzs",
+      "subject": "/CN=aqzs/O=aqzs/ST=France/C=FR/L=Paris/emailAddress=aqzs@msj.com",
+      "expires": "2045-06-21T16:38:45Z",
+      "notes": "Self-signed aqzs certificate observed on the valid app-bundle seal in the cited sample. The outer DMG is unsigned.",
+      "source": "releases/aqzs/Paragraphic 1.2.4 [aqzs] [U2B].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "b04e6205e1d78eb9c4cb87a6651e50bb3110f6f50110c61fdefb884e722fde7c",
+      "label": "LOVE",
+      "subject": "/CN=LOVE",
+      "expires": "2222-02-02T22:22:22Z",
+      "notes": "Self-signed LOVE certificate observed on the valid app-bundle seal in the cited verified release. The outer DMG is unsigned.",
+      "source": "releases/LOVE/Vibe Island 1.0.41 [LOVE].dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "5b3320483fc794488cc7caa4c3b6eca9178b7350a20fb38190b106742206b333",
+      "label": "SEAL TEAM WORLDWIDE",
+      "subject": "/CN=SEAL TEAM WORLDWIDE/O=SEAL TEAM WORLDWIDE/C=AU",
+      "expires": "2038-04-20T19:48:15Z",
+      "notes": "Self-signed ReleaseSeal project identity validated on both the test app bundle and its signed outer DMG.",
+      "source": "test_app/ReleaseSeal-SEAL-TEAM-WORLDWIDE-Test.dmg"
+    }
+  ],
+  "trustedHelpers": [
+    {
+      "identifier": "tnt-open-gatekeeper-friendly",
+      "fileName": "Open Gatekeeper friendly",
+      "caseSensitive": false,
+      "label": "Open Gatekeeper friendly",
+      "expectedKind": "text-script",
+      "minimumSize": 50,
+      "maximumSize": 8192,
+      "heuristicProfile": "shell-script-risk",
+      "heuristicMaximumSize": 8192,
+      "sha256": [
+        "45f8b43453cb19232902844bfde4af6471f3762880f23e968bfca28a33c26817"
+      ],
+      "source": "releases/TNT/Qbserve_1.91_[TNT].dmg",
+      "notes": "Known TNT helper script. Filename matching is case-insensitive."
+    }
+  ],
+  "verifiedArtifacts": [
+    {
+      "type": "dmg-sha256",
+      "hash": "aa7d1ce13666885acd3747b7219e7093624b43ecba27ef0c32421bc4f6a1e30b",
+      "label": "Vibe Island 1.0.34 [atb]",
+      "verifiedAt": "2026-07-12",
+      "source": "releases/ATB/Vibe Island 1.0.34 [atb].dmg",
+      "notes": "Exact DMG bytes confirmed as a verified Antibiotics release."
+    }
+  ],
+  "compromised": [
+    {
+      "type": "dmg-md5",
+      "hash": "0041b628e66c59e25f2dac8a95405931",
+      "status": "compromised",
+      "label": "zBrush 2024.0.2.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "030f983c60b498e199d6f0d2629186f0",
+      "status": "compromised",
+      "label": "Topaz Gigapixel AI 7.4.4.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "03d5652905093b4561925d418a5a5e21",
+      "status": "compromised",
+      "label": "BetterZip 5.4 [TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "0515cd770e83e1cdf877dce4ea83176f",
+      "status": "compromised",
+      "label": "Adobe Acrobat DC 24.005.20320.7 SICE.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "0681496c1c5e0d922c2621f9d75bc8b1",
+      "status": "compromised",
+      "label": "Blackmagic Design DaVinci Resolve Studio 19.0.0.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "0a9d1c1182cb0365249c258d225d80a7",
+      "status": "compromised",
+      "label": "Adobe After Effects 25.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "0d98df0fc37f039a9d83bead40e638bd",
+      "status": "compromised",
+      "label": "Capture_One_Pro_16.5.0.29_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "11597e52af783daead3ca7b20c02174e",
+      "status": "compromised",
+      "label": "RipX.DAW.PRO.7.5.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "143c373f1f4bc121c1ae164b04f0c101",
+      "status": "compromised",
+      "label": "SketchUp_2024_598-243_(24.0.598)_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "1770ca98ae752169f50379c28b11f40c",
+      "status": "compromised",
+      "label": "SILKYPIX.JPEG.Photography.11E.TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "18590ff4d9eb846e9db01ab2cfd6537f",
+      "status": "compromised",
+      "label": "CleanMyMac_5 5.0.3.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "1b7314ca609aaf5fc3803e6e8f3921ef",
+      "status": "compromised",
+      "label": "Camtasia_2025.0.0_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "2646ce944459c3c7d76982f074ef59ba",
+      "status": "compromised",
+      "label": "Capture_One_Pro_16.5.1.14_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "277903ae4a92fdeb120ce4ded0fbad8f",
+      "status": "compromised",
+      "label": "Pro Microphone 1.7.0.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "2e491eb7f31cd46dbac2196e45fee061",
+      "status": "compromised",
+      "label": "Autodesk Maya 2025 202402161156 (0caf8d1269).dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "301caf8fef80ac87b3c94b90dddc5d5b",
+      "status": "compromised",
+      "label": "CleanMyMac_5_5.0.5 .dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "32c2a42ed4772ad8773746b9c3ed774a",
+      "status": "compromised",
+      "label": "Install_Waves_Central.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3396c6e4d56a0266b054548d6e2b8586",
+      "status": "compromised",
+      "label": "Perfectly_Clear_Workbench_v4_4_6_1_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "33b473f553b60d4472d7a9a59af18324",
+      "status": "compromised",
+      "label": "Rhino 8.12.24282 macOS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3545fb900228dbfe9480fe0b9e40cc47",
+      "status": "compromised",
+      "label": "iZotope Neutron 4 v4.6.0 macOS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "35bc532aa6f481343a567eb46a8fabaf",
+      "status": "compromised",
+      "label": "Perfectly Clear Workbench 4.6.1 2711.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "380c4478fbda2aabf2f163e0db7e4bed",
+      "status": "compromised",
+      "label": "XLN_Audio_XO_1.7.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "38e61a9f966dc748ad93f495bac4a006",
+      "status": "compromised",
+      "label": "Downie_4_4.8.13.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3956fcb658976ebb656a00991be70062",
+      "status": "compromised",
+      "label": "Magic.Disk.Cleaner.2.10.1.TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3a3f8829dee2c1187919cd10f31f6ce4",
+      "status": "compromised",
+      "label": "Valentina Studio 14.7.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3a4c7b4100da50ee20a759e9778adf45",
+      "status": "compromised",
+      "label": "PullTube 1.8.5.54.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "3baf2cdac31706752c00bc736e6b6962",
+      "status": "compromised",
+      "label": "Adobe Lightroom Classic v14.0.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "4160a04b0c955dad66ea9390dc4c3278",
+      "status": "compromised",
+      "label": "PDFelement_11_4_7_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "443257c0a93446003caea3b686848565",
+      "status": "compromised",
+      "label": "Pixelmator_Pro_3.6.15.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "46976589a4ca814c6a5fa751c3b11632",
+      "status": "compromised",
+      "label": "Nuke Studio v15.1v2 macOS ARM.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "483787a48d84fc74d6f9fe6362fbae2d",
+      "status": "compromised",
+      "label": "PDFelement 11.4.18.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "4e2d664b4f1b75db36e439c3a19aa21b",
+      "status": "compromised",
+      "label": "Perfectly_Clear_Workbench_v4_4.6.1.2717_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "4ea84e372a43fbbff37b83871901f323",
+      "status": "compromised",
+      "label": "ParallelsDesktop-20.2.1-55876.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "4efe532c171a16e7aacaad7a370952d0",
+      "status": "compromised",
+      "label": "Audio_Hijack_4.5.0_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "4f13f092e9964b239b2e88939546ec12",
+      "status": "compromised",
+      "label": "Kaleidoscope+5.3.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "53e69901cdab5d65cb6ff53edfd80835",
+      "status": "compromised",
+      "label": "DaVinci_Resolve_Studio_19.1.1_Mac.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "54ddebddcf7cee877d5cbd8771d280d0",
+      "status": "compromised",
+      "label": "Capture One Pro 16.4.5.29.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "54de5383819ac0f85e24673db24383d6",
+      "status": "compromised",
+      "label": "Dropover.4..5.2.TNT.MAC.OS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "54ea56d857e0c57180f25d4734e06ff7",
+      "status": "compromised",
+      "label": "Microsoft Office 2024 v16.93.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5985e1fec1ae72b020672d24270e95a4",
+      "status": "compromised",
+      "label": "CorelDRAW v25.2.1.313.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5bf80ea3e65a3327504120d5833b3b6a",
+      "status": "compromised",
+      "label": "Adobe Acrobat DC 24.004.20219.7.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5d826945c11f9cb8344572b929e8062e",
+      "status": "compromised",
+      "label": "DaVinci_Resolve_Studio_19.1.3_Mac.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5da1f92636300487fb329a2d4443a22b",
+      "status": "compromised",
+      "label": "Logic_Pro_11.1.2_MAS_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5f37ea4e9c38e3ab9b8ae9403dc92ed9",
+      "status": "compromised",
+      "label": "Parallels Desktop 20.1.2-55742.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "6041ec0341e70857445bc84bdf0cc17c",
+      "status": "compromised",
+      "label": "Luminar Neo 1.20.1 (18067) macOS TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "609f32ce2788d800aa5e1245c4da62cd",
+      "status": "compromised",
+      "label": "DxO PhotoLab 8 8.3.0 TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "62279f76554101c1879331d68743afc2",
+      "status": "compromised",
+      "label": "Capture_One_Pro_16.5.3.1_[TNT].dmg | Capture_One_Pro_16_5_4_26.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "660a35f80210b4d8f6410d11a2660526",
+      "status": "compromised",
+      "label": "Elmedia Player Pro 8 8.20 TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "6919ea6c8f02f65ebfb1244ccd765600",
+      "status": "compromised",
+      "label": "Adobe Lightroom Classic 14.1.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "6c0b893258d8f5d68591b7d2d3e83903",
+      "status": "compromised",
+      "label": "Install_Waves_Central.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "70eb7db965b3bf0fb6213d6b99a80918",
+      "status": "compromised",
+      "label": "Adobe Illustrator 29.0.1 NAP.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "710f3cef66f532c9560033ea185f043f",
+      "status": "compromised",
+      "label": "HitPaw Univd 4.7.0 [TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "7513e2b4602caee8e095377db6c27e01",
+      "status": "compromised",
+      "label": "CleanMyMac 5 5.0.4 [U2B Pre-K'ed]-20074.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "76ff29ef57e8dcbe5a498153656e4e00",
+      "status": "compromised",
+      "label": "Downie_4_4.9.4_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "780a8e7f52e43122a4e1eae2ba38b6a5",
+      "status": "compromised",
+      "label": "Adobe Bridge 15.0.2.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "7da1f3fe263c4eea91fb8f8b4abe9492",
+      "status": "compromised",
+      "label": "Luminar Neo 1.21.0 18389.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "7fd12c00e22acde8352b348709e9569a",
+      "status": "compromised",
+      "label": "HitPaw Photo Object Remover 1.2.2.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "81f0e73cdf76b63ca777727b68c8eba8",
+      "status": "compromised",
+      "label": "Wondershare Recoverit 13.0.7.14 [TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "834528407c1044335ede352f3c0f4590",
+      "status": "compromised",
+      "label": "Cookie_7.5.2_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "876f3be21d8d205b30993791d9cacf37",
+      "status": "compromised",
+      "label": "PDF_Reader_Pro_4.7.8_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "88eb3ed4d295e5ea0296d090c158a0e0",
+      "status": "compromised",
+      "label": "Wondershare PDFelement Pro 11.1.3.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "8c1ca9899a3850f0302f2b4c2b76237d",
+      "status": "compromised",
+      "label": "ParallelsDesktop-20.2.0.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "8c6212f7fb638cb378c6ef1239517924",
+      "status": "compromised",
+      "label": "Adobe After Effects 24.5.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "8f3b0a8286ef892c6b68bdc0bde12878",
+      "status": "compromised",
+      "label": "WiFi.Explorer.Pro.3.6.9.TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "949c3b25076469ffdde6dbf9137a13e8",
+      "status": "compromised",
+      "label": "Topaz Gigapixel v8.0.0 macOS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "9717b403c7c4ca5c33d4d427311d7e96",
+      "status": "compromised",
+      "label": "Topaz Video AI 5.3.5 macOS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "975f8b188b4d075cb4631312d4a7e25e",
+      "status": "compromised",
+      "label": "Adobe Illustrator 29.3.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "994cb72dd0d3f0023c9a11214bc993b6",
+      "status": "compromised",
+      "label": "Microsoft Office 2021 LTSC 16.88.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "a100d252cdc50869bacdd56185c0d3d3",
+      "status": "compromised",
+      "label": "Final Cut Pro 11.0.1 MAS [TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "ab141aecb8382f4fd72e535ab78f7e90",
+      "status": "compromised",
+      "label": "Microsoft.Office.LTSC.Standard.for.Mac.OS.2024.v16.94.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "ab5e9f5a141bded16d49b9659b9bca33",
+      "status": "compromised",
+      "label": "Microsoft Office 2024 v16.93.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "ac60b72617c8ce08931a4fd424ed4565",
+      "status": "compromised",
+      "label": "Adobe Acrobat Pro 24.006.20400.7.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "b06fc59cecd6b4b09267701880f1c7ab",
+      "status": "compromised",
+      "label": "Waves Ultimate 15 11.06.24 [TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "b0c0a1a7947292ac25f2c4121cc0eb1f",
+      "status": "compromised",
+      "label": "PDF_Reader_Pro_4_7_8_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "b1c01e6af780eecec99472bbdb2bf8bd",
+      "status": "compromised",
+      "label": "Microsoft Office 2024 v16.92.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "b913059ca1079f1e595d061bb6046b4d",
+      "status": "compromised",
+      "label": "Affinity_Photo_2_2.5.6_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "bb300ba91a09ba23fbd7af43247ad4b3",
+      "status": "compromised",
+      "label": "Adobe Premiere Pro 25.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "c30ad49debf39d1e73350ee06d370e59",
+      "status": "compromised",
+      "label": "Adobe Photoshop 26.3.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "cb1e2369b35fb8e37dd45ef3ff098fda",
+      "status": "compromised",
+      "label": "Microsoft Office 2024 v16.93.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "cd358845f2a73beca5efad50f3833831",
+      "status": "compromised",
+      "label": "Infuse Pro 8.0.9 .dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "cde447c2b2823cf6ffc57a507cb0c83c",
+      "status": "compromised",
+      "label": "ACDSee.Photo.Studio.11.11.0.1.3155.TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "cfc814271f4a355b9a96e609dd9b525f",
+      "status": "compromised",
+      "label": "ParallelsDesktop-20.1.1-55740.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "d79d030e383eccaf3142e593b9ab074c",
+      "status": "compromised",
+      "label": "Capture One Pro 16.5.5.7. TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "d7f8b30accdebbd343e0a63b05b2d527",
+      "status": "compromised",
+      "label": "CleanMyMac 5.0.4(atb).dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "d83dc8416db1dc4d2deae50928050d02",
+      "status": "compromised",
+      "label": "DaVinci_Resolve_Studio_19.1_Mac.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "d841c91d1d1cb3a9eda3f6e6ddeddc27",
+      "status": "compromised",
+      "label": "Sketch_101.8_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "d94dcb61e7bbfc95af863158ae039a1f",
+      "status": "compromised",
+      "label": "CrossOver_24.0.7_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "db884a33213c5f85215c065d98966532",
+      "status": "compromised",
+      "label": "Microsoft Office 2024 v16.91.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "db8eeb9d956f327d97e23fa04fdfe1db",
+      "status": "compromised",
+      "label": "Install_Waves_Central.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "df69dc21cb6839286e247c2fa2dc462a",
+      "status": "compromised",
+      "label": "Adobe Illustrator 29.2.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "e67d6fc1b21539bde4d409bfcf6d9eb1",
+      "status": "compromised",
+      "label": "Adobe Lightroom Classic 14.2.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "e91b0cc7561c4d032d0da55c4285ce83",
+      "status": "compromised",
+      "label": "PowerPhotos_2.7.4_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "ea795c69ff68af3ea67dbf5f841dac1a",
+      "status": "compromised",
+      "label": "PDF Expert 3.10.10.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "eb6be600da6c9ce2bd1bbf2583639f69",
+      "status": "compromised",
+      "label": "MacPilot 16.6.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "ee77106aabaeefb281a140c1687b25be",
+      "status": "compromised",
+      "label": "Commander_One_PRO_3.11_[TNT].dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "f1e92de57afd62fd6b459b94f8f63344",
+      "status": "compromised",
+      "label": "Rhino_8_8_16_TNT.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "f5e43c9817797242d5edaa58a61600ca",
+      "status": "compromised",
+      "label": "Adobe Photoshop 26.1.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    }
+  ]
+}

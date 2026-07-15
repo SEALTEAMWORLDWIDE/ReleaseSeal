@@ -1,0 +1,57 @@
+name: Tracked file evidence submission
+description: Propose a tracked-file policy or a newly verified hash without uploading the file.
+title: "Tracked file evidence candidate: "
+labels: ["evidence", "tracked-file"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach or link to the tracked file or release payload. Submit only hashes, safe metadata, and reproducible inspection evidence.
+  - type: input
+    id: filename
+    attributes:
+      label: Tracked filename
+      description: Enter the exact filename, where it is expected to appear, and whether matching should be case-sensitive.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Expected file kind
+      options:
+        - text-script
+        - plain-text
+        - mach-o
+        - regular-file
+    validations:
+      required: true
+  - type: input
+    id: size
+    attributes:
+      label: Verified size or size range
+      placeholder: For example 1575 bytes or 1500 to 1700 bytes
+    validations:
+      required: true
+  - type: input
+    id: hash
+    attributes:
+      label: Lowercase SHA-256
+      description: Enter 64 lowercase hexadecimal characters.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Purpose and provenance
+      description: Explain why this file is tracked and how its bytes were independently verified without linking to the payload.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not upload or link to a tracked file, release payload, crack, patcher, key, or malware sample.
+          required: true
+        - label: I reviewed the submission for private paths and personal information.
+          required: true

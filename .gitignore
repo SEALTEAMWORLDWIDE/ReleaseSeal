@@ -1,0 +1,14 @@
+.DS_Store
+._*
+*.dmg
+*.pkg
+*.zip
+*.app
+*.p12
+*.pfx
+*.key
+*.pem
+*.mobileprovision
+release-staging/
+__pycache__/
+

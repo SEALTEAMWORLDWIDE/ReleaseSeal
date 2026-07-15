@@ -1,0 +1,48 @@
+name: Compromised or revoked evidence
+description: Propose a compromised artifact hash or revoked certificate fingerprint.
+title: "Compromised evidence candidate: "
+labels: ["evidence", "compromised"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never attach the malicious file. Do not link to a download. Submit hashes, safe metadata, and an evidence explanation only.
+  - type: input
+    id: type
+    attributes:
+      label: Evidence type
+      placeholder: For example dmg-sha256, pkg-md5, or cert-root-sha256
+    validations:
+      required: true
+  - type: input
+    id: hash
+    attributes:
+      label: Lowercase hash
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Proposed status
+      options:
+        - compromised
+        - revoked
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and provenance
+      description: Explain why this evidence should be listed and identify the source without posting the payload.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not upload or link to malware or other distributable payloads.
+          required: true
+        - label: I reviewed the submission for private paths and personal information.
+          required: true
+
