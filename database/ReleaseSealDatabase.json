@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "metadata": {
     "name": "ReleaseSeal evidence database",
-    "databaseVersion": "2026.07.22.1",
+    "databaseVersion": "2026.07.22.2",
     "releaseDate": "2026-07-22",
     "notes": "Trusted entries are allowlist evidence only; compromised entries take precedence."
   },
@@ -578,6 +578,13 @@
     },
     {
       "type": "dmg-md5",
+      "hash": "2b61e7da811ffe0b21f77ee0e87f4af4",
+      "status": "compromised",
+      "label": "CleanMyMac_5 5.0.5 .dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-22"
+    },
+    {
+      "type": "dmg-md5",
       "hash": "2e491eb7f31cd46dbac2196e45fee061",
       "status": "compromised",
       "label": "Autodesk Maya 2025 202402161156 (0caf8d1269).dmg",
@@ -722,6 +729,27 @@
       "status": "compromised",
       "label": "Kaleidoscope+5.3.1.dmg",
       "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "50de6fcc310aeb9de9cf92479dbc9aec",
+      "status": "compromised",
+      "label": "Microsoft_365_and_Office_16.108.26041219.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-22"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "512d26d7ba4443da1cee8faabb3e219a",
+      "status": "compromised",
+      "label": "Topaz Video Pro v1.5.1 macOS.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-22"
+    },
+    {
+      "type": "dmg-md5",
+      "hash": "5167de1939ed9832ac191be6175668ce",
+      "status": "compromised",
+      "label": "Adobe Illustrator CC 2024 28.6.dmg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-22"
     },
     {
       "type": "dmg-md5",
@@ -981,6 +1009,13 @@
       "status": "compromised",
       "label": "Adobe Acrobat Pro 24.006.20400.7.dmg",
       "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "pkg-md5",
+      "hash": "af07e6653cb2fe46432620043dc71431",
+      "status": "compromised",
+      "label": "Microsoft_Office_LTSC_2024_VL_Serializer.pkg",
+      "source": "Confirmed stealer-malware hash corpus submitted 2026-07-22"
     },
     {
       "type": "dmg-md5",

@@ -2,13 +2,13 @@
 
 This file is generated from `ReleaseSealDatabase.json`. The JSON database is authoritative.
 
-- Database version: `2026.07.22.1`
+- Database version: `2026.07.22.2`
 - Release date: `2026-07-22`
-- Database SHA-256: `93be7624813d452afc7b0777af0bcadccacf10d44e41c8a294bb9700c422bf55`
+- Database SHA-256: `478b0bff9e8b8c1aa8267dbca8e6f11f0045fe23d8ff2e6c7ce30cf141d63b31`
 - Trusted certificate entries: `49`
 - Tracked file entries: `1`
 - Exact verified artifacts: `1`
-- Compromised or revoked entries: `97`
+- Compromised or revoked entries: `102`
 
 A recognized certificate or exact artifact is evidence of an expected identity or exact byte match. It is not a malware-free guarantee.
 
@@ -81,7 +81,7 @@ ReleaseSeal also recognizes valid Apple-anchored Mac App Store signatures direct
 
 ## Compromised evidence
 
-The database currently contains 97 compromised or revoked hashes.
+The database currently contains 102 compromised or revoked hashes.
 Individual entries remain in the JSON database so tools can consume them without turning this summary into a wall of text.
 
 ## Provenance note
