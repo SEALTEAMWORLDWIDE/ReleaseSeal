@@ -81,7 +81,7 @@
         "additionalProperties": false,
         "required": ["type", "hash", "label", "verifiedAt", "source"],
         "properties": {
-          "type": { "enum": ["dmg-sha256", "pkg-sha256", "zip-sha256"] },
+          "type": { "enum": ["dmg-sha256", "iso-sha256", "pkg-sha256", "zip-sha256"] },
           "hash": { "$ref": "#/$defs/sha256" },
           "label": { "type": "string", "minLength": 1, "maxLength": 500 },
           "verifiedAt": { "type": "string", "format": "date" },
@@ -101,7 +101,7 @@
             "enum": [
               "cert-sha1", "cert-sha256", "cert-root-sha1", "cert-leaf-sha1",
               "cert-root-sha256", "cert-leaf-sha256", "dmg-md5", "dmg-sha1",
-              "dmg-sha256", "pkg-md5", "pkg-sha1", "pkg-sha256", "zip-md5",
+              "dmg-sha256", "iso-md5", "iso-sha1", "iso-sha256", "pkg-md5", "pkg-sha1", "pkg-sha256", "zip-md5",
               "zip-sha1", "zip-sha256"
             ]
           },

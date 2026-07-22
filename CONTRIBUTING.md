@@ -29,7 +29,7 @@ Review and remove private paths before posting the output.
 
 ## Exact verified artifact candidates
 
-Exact artifact entries support DMG, PKG, and ZIP SHA-256 hashes. Include the proposed label, lowercase SHA-256, artifact type, verification date, and a concise provenance explanation. Raw app directories are intentionally not accepted as exact artifacts.
+Exact artifact entries support DMG, ISO, PKG, and ZIP SHA-256 hashes. Include the proposed label, lowercase SHA-256, artifact type, verification date, and a concise provenance explanation. Raw app directories are intentionally not accepted as exact artifacts.
 
 ## Tracked file candidates
 

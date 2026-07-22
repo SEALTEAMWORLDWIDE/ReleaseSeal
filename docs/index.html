@@ -29,7 +29,7 @@
     <section class="project-intro" aria-labelledby="project-title">
       <h1 id="project-title">ReleaseSeal</h1>
       <p class="tagline">Source Evidence &amp; Authenticity Layer</p>
-      <p class="summary">ReleaseSeal reads DMG, PKG, ZIP, and app artifacts. It reports container hashes, code-signing validity, certificate fingerprints, exact-artifact matches, database-defined checks for tracked files, and known compromised hashes. Scanned software is never executed during inspection.</p>
+      <p class="summary">ReleaseSeal reads DMG, ISO, PKG, ZIP, and app artifacts. It reports container hashes, code-signing validity where available, certificate fingerprints, exact-artifact matches, database-defined checks for tracked files, and known compromised hashes. Scanned software is never executed during inspection.</p>
       <div class="actions">
         <a class="button" href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Download</a>
         <a href="#verify">Release verification</a>
@@ -80,10 +80,10 @@
         <p>Container evidence and internal code-signing evidence are reported separately.</p>
       </header>
       <dl class="check-table">
-        <div><dt>Container layers</dt><dd>DMG, PKG, ZIP, and app layers are identified and reported independently.</dd></div>
+        <div><dt>Container layers</dt><dd>DMG, ISO, PKG, ZIP, and app layers are identified and reported independently.</dd></div>
         <div><dt>Certificate identity</dt><dd>Leaf and root SHA-256 fingerprints are compared with reviewed signer records.</dd></div>
         <div><dt>Signature integrity</dt><dd>macOS checks whether signed bundle contents still match the signature seal.</dd></div>
-        <div><dt>Exact artifacts</dt><dd>Complete DMG, PKG, and ZIP files can match reviewed SHA-256 records byte for byte.</dd></div>
+        <div><dt>Exact artifacts</dt><dd>Complete DMG, ISO, PKG, and ZIP files can match reviewed SHA-256 records byte for byte.</dd></div>
         <div><dt>Compromised evidence</dt><dd>Reviewed MD5, SHA-1, and SHA-256 compromise records take precedence over positive matches.</dd></div>
         <div><dt>Tracked files</dt><dd>Selected filenames can receive additional file-type, size, and hash checks wherever they are found.</dd></div>
       </dl>

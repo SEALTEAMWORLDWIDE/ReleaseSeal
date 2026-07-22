@@ -1,6 +1,6 @@
 # ReleaseSeal
 
-ReleaseSeal is an offline defensive macOS inspection tool for comparing release evidence with a reviewed database. It checks signed DMG, PKG, ZIP, and app artifacts, exact artifact hashes, tracked files, certificate identities, code-signing integrity, and known compromised hashes.
+ReleaseSeal is an offline defensive macOS inspection tool for comparing release evidence with a reviewed database. It checks DMG, ISO, PKG, ZIP, and app artifacts, exact artifact hashes, tracked files, certificate identities, code-signing integrity where available, and known compromised hashes.
 
 ReleaseSeal does not execute inspected software. It does not claim that a matching item is malware-free. A match means that the observed evidence matches a reviewed database entry or an Apple-anchored signature class described by the report.
 

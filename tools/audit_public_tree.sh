@@ -16,12 +16,12 @@ python3 tools/validate_release_metadata.py
 if find . -path './release-staging' -prune -o -type f \( \
     -name '.DS_Store' -o -name '._*' -o -name '*.p12' -o -name '*.pfx' -o \
     -name '*.key' -o -name '*.pem' -o -name '*.mobileprovision' -o \
-    -name '*.dmg' -o -name '*.pkg' -o -name '*.zip' -o -name '*.app' \
+    -name '*.dmg' -o -name '*.iso' -o -name '*.pkg' -o -name '*.zip' -o -name '*.app' \
 \) -print -quit | /usr/bin/grep -q .; then
     find . -type f \( \
         -name '.DS_Store' -o -name '._*' -o -name '*.p12' -o -name '*.pfx' -o \
         -name '*.key' -o -name '*.pem' -o -name '*.mobileprovision' -o \
-        -name '*.dmg' -o -name '*.pkg' -o -name '*.zip' -o -name '*.app' \
+        -name '*.dmg' -o -name '*.iso' -o -name '*.pkg' -o -name '*.zip' -o -name '*.app' \
     \) -print >&2
     fail "generated release output or private signing material is present."
 fi

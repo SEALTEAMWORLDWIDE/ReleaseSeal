@@ -12,6 +12,32 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate_database import ValidationFailure, load_and_validate  # noqa: E402
 
 
+def certificate_sort_key(entry: dict) -> tuple[str, str, str]:
+    """Sort signer rows by identity rather than Apple's repeated certificate prefix."""
+    label = entry["label"].strip()
+    normalized = label.casefold()
+    for prefix in (
+        "developer id application: ",
+        "developer id installer: ",
+        "3rd party mac developer application: ",
+        "3rd party mac developer installer: ",
+    ):
+        if normalized.startswith(prefix):
+            normalized = normalized[len(prefix) :]
+            break
+    if normalized.startswith("the "):
+        normalized = normalized[4:]
+    if normalized.startswith("team "):
+        normalized = normalized[5:]
+    if normalized.startswith("https://"):
+        normalized = normalized[8:]
+    if normalized.startswith("www."):
+        normalized = normalized[4:]
+    if label == "Software Signing" and "/O=Apple Inc." in entry.get("subject", ""):
+        normalized = "apple software signing"
+    return normalized, entry["type"], entry["hash"]
+
+
 def render(database: dict, raw: bytes) -> str:
     metadata = database["metadata"]
     lines = [
@@ -29,12 +55,16 @@ def render(database: dict, raw: bytes) -> str:
         "",
         "A recognized certificate or exact artifact is evidence of an expected identity or exact byte match. It is not a malware-free guarantee.",
         "",
+        "## Mac App Store signatures",
+        "",
+        "ReleaseSeal also recognizes valid Apple-anchored Mac App Store signatures directly from macOS signing evidence. Mac App Store recognition is built into the scanner, so those signatures are not certificate allowlist entries and are not included in the trusted-certificate count above.",
+        "",
         "## Recognized release signers",
         "",
         "| Label | Certificate pin | Expires |",
         "| --- | --- | --- |",
     ]
-    for entry in database["trustedCertificates"]:
+    for entry in sorted(database["trustedCertificates"], key=certificate_sort_key):
         expires = entry.get("expires", "Not recorded")[:10]
         label = entry["label"].replace("|", "\\|")
         lines.append(f"| {label} | `{entry['type']}` `{entry['hash']}` | {expires} |")

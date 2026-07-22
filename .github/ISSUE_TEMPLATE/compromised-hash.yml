@@ -11,7 +11,7 @@ body:
     id: type
     attributes:
       label: Evidence type
-      placeholder: For example dmg-sha256, pkg-md5, or cert-root-sha256
+      placeholder: For example dmg-sha256, iso-sha256, pkg-md5, or cert-root-sha256
     validations:
       required: true
   - type: input
@@ -45,4 +45,3 @@ body:
           required: true
         - label: I reviewed the submission for private paths and personal information.
           required: true
-

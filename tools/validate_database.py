@@ -21,6 +21,7 @@ CERTIFICATE_TYPES = {
 }
 ARTIFACT_TYPES = {
     "dmg-sha256",
+    "iso-sha256",
     "pkg-sha256",
     "zip-sha256",
 }
@@ -34,6 +35,9 @@ COMPROMISED_TYPES = {
     "dmg-md5",
     "dmg-sha1",
     "dmg-sha256",
+    "iso-md5",
+    "iso-sha1",
+    "iso-sha256",
     "pkg-md5",
     "pkg-sha1",
     "pkg-sha256",

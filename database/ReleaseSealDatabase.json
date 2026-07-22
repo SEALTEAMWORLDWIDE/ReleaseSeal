@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "metadata": {
     "name": "ReleaseSeal evidence database",
-    "databaseVersion": "2026.07.15.1",
-    "releaseDate": "2026-07-15",
+    "databaseVersion": "2026.07.22.1",
+    "releaseDate": "2026-07-22",
     "notes": "Trusted entries are allowlist evidence only; compromised entries take precedence."
   },
   "trustedCertificates": [
@@ -96,6 +96,357 @@
       "expires": "2038-04-20T19:48:15Z",
       "notes": "Self-signed ReleaseSeal project identity validated on both the test app bundle and its signed outer DMG.",
       "source": "test_app/ReleaseSeal-SEAL-TEAM-WORLDWIDE-Test.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "e82b38dcf5e5cd9e1f0808c91ffcf8706f032cf3bed0008009b996d418ae4e7d",
+      "label": "Developer ID Application: Ableton AG (MWR434WD94)",
+      "subject": "/UID=MWR434WD94/CN=Developer ID Application: Ableton AG (MWR434WD94)/OU=MWR434WD94/O=Ableton AG/C=DE",
+      "expires": "2027-01-28T11:34:32Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on an official Ableton trial DMG downloaded from Ableton.",
+      "source": "releases/Ableton/ableton_live_trial_12.4.3_universal-og.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "645d86d2df769ed704cfb1fa1b387f7869dc8712ab4e0fbcebbc2964d3e9a948",
+      "label": "Developer ID Installer: Microsoft Corporation (UBF8T346G9)",
+      "subject": "/UID=UBF8T346G9/CN=Developer ID Installer: Microsoft Corporation (UBF8T346G9)/OU=UBF8T346G9/O=Microsoft Corporation/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on an official Microsoft 365 and Office installer package.",
+      "source": "releases/Microsoft/Microsoft_365_and_Office_16.111.26071325_Installer.pkg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "7ccff00abba59a11328f439df95f0c37c2d4cd511370d488bd1ae4a35bc10e68",
+      "label": "Developer ID Application: Canva Pty Ltd (5HD2ARTBFS)",
+      "subject": "/UID=5HD2ARTBFS/CN=Developer ID Application: Canva Pty Ltd (5HD2ARTBFS)/OU=5HD2ARTBFS/O=Canva Pty Ltd/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the app bundle inside the cited official Canva DMG. The outer DMG is unsigned.",
+      "source": "releases/Canva/Affinity_3.2.2.4557_20260617_080328.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "3b20d329dcdc7bc4164115403b1102cf032c8a9b075eb22860f9e88e1c28f9a9",
+      "label": "Developer ID Application: Adobe Systems, Inc. (JQ525L2MZD)",
+      "subject": "/UID=JQ525L2MZD/CN=Developer ID Application: Adobe Systems, Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Systems, Inc./C=US",
+      "expires": "2022-02-11T00:05:48Z",
+      "notes": "Historical Apple-issued Developer ID Application certificate observed on the signed official Adobe Creative Cloud DMG. Its signature includes a trusted timestamp from before certificate expiration.",
+      "source": "releases/Adobe/ACCCx4_9_0_504.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "9ff4333283ec0a959965925f1ea235a6fe438ded8feab28d238d8a564195a0a4",
+      "label": "Developer ID Application: Adobe Inc. (JQ525L2MZD)",
+      "subject": "/UID=JQ525L2MZD/CN=Developer ID Application: Adobe Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Inc./C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on official Adobe Creative Cloud and Acrobat DMGs.",
+      "source": "releases/Adobe/ACCCx6_10_0_252_3.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "979a81be0715ba87990eaddcae97a79808198a1ede0f4a420dce389680a1cebf",
+      "label": "Developer ID Installer: Adobe Inc. (JQ525L2MZD)",
+      "subject": "/UID=JQ525L2MZD/CN=Developer ID Installer: Adobe Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Inc./C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the notarized Acrobat installer package inside the cited official Adobe DMG.",
+      "source": "releases/Adobe/AcrobatSCA_DC_Web_WWMUI.dmg :: Acrobat/Acrobat DC SCA Installer.pkg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "c69b4573b887abcaeb29e74d8ef3a49ad3ad8b683c3dc22ba7502b37a6878069",
+      "label": "Developer ID Application: AgileBits Inc. (2BUA8C4S2C)",
+      "subject": "/UID=2BUA8C4S2C/CN=Developer ID Application: AgileBits Inc. (2BUA8C4S2C)/OU=2BUA8C4S2C/O=AgileBits Inc./C=CA",
+      "expires": "2029-05-02T14:25:42Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the 1Password app bundle in the cited sample.",
+      "source": "releases/AgileBits/1Password.zip"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "80871fc96487042b473ff3e7340af22d12ab6507cb9690f24d1203a3646f968e",
+      "label": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
+      "subject": "/UID=Q6L2SF6YDW/CN=Developer ID Application: Anthropic PBC (Q6L2SF6YDW)/OU=Q6L2SF6YDW/O=Anthropic PBC/C=US",
+      "expires": "2031-05-30T16:28:47Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Claude DMG.",
+      "source": "releases/Anthropic/Claude.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "d84db96af8c2e60ac4c851a21ec460f6f84e0235beb17d24a78712b9b021ed57",
+      "label": "Software Signing",
+      "subject": "/C=US/O=Apple Inc./OU=Apple Software/CN=Software Signing",
+      "expires": "2026-10-24T17:39:41Z",
+      "notes": "Apple software-signing certificate observed on Safari.app in the cited locally generated candidate record.",
+      "source": "releases/Apple/apple1.json (candidate from Safari.app)"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "f34583695acb7bd3468d73ac58fea20db450ce39f736c4dc69eb79a0fee7605b",
+      "label": "Developer ID Application: Mark Allan (75FD6A6E5A)",
+      "subject": "/UID=75FD6A6E5A/CN=Developer ID Application: Mark Allan (75FD6A6E5A)/OU=75FD6A6E5A/O=Mark Allan/C=GB",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the ClamXAV app distributed by Canimaan Software.",
+      "source": "releases/Canimaan/ClamXAV.app"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "3f66e8305d944b5e467e1929b2dff36e051adba66827f851a341f97f14c0d210",
+      "label": "Developer ID Installer: Mark Allan (75FD6A6E5A)",
+      "subject": "/UID=75FD6A6E5A/CN=Developer ID Installer: Mark Allan (75FD6A6E5A)/OU=75FD6A6E5A/O=Mark Allan/C=GB",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the ClamXAV installer distributed by Canimaan Software.",
+      "source": "releases/Canimaan/ClamXAV_3.10.2_11619_Installer.pkg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "7927d5446a1aa4935588e537f3a3295ee9aaf377a8cfeebfef16782340953e1f",
+      "label": "Developer ID Application: Charles Srstka (HRLUCP7QP4)",
+      "subject": "/UID=HRLUCP7QP4/CN=Developer ID Application: Charles Srstka (HRLUCP7QP4)/OU=HRLUCP7QP4/O=Charles Srstka/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the Pacifist app bundle in the cited CharlesSoft sample.",
+      "source": "releases/CharlesSoft/Pacifist_4.1.4.zip"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "5cd9473b0ad2ac1f7ebbf23a6e3ddfc0488c6ffb2f0182c88ffcdc87cd1a77df",
+      "label": "Developer ID Application: Cloudflare Inc. (68WVV388M8)",
+      "subject": "/UID=68WVV388M8/CN=Developer ID Application: Cloudflare Inc. (68WVV388M8)/OU=68WVV388M8/O=Cloudflare Inc./C=US",
+      "expires": "2029-12-14T16:19:44Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the Cloudflare WARP app bundle.",
+      "source": "releases/Cloudflare/Cloudflare WARP.app"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "46938d196c953873d0de78ebbc02ea97793c41a2761a255a6042f74a0deaa916",
+      "label": "Developer ID Installer: Cloudflare Inc. (68WVV388M8)",
+      "subject": "/UID=68WVV388M8/CN=Developer ID Installer: Cloudflare Inc. (68WVV388M8)/OU=68WVV388M8/O=Cloudflare Inc./C=US",
+      "expires": "2029-12-14T16:14:05Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the cited Cloudflare WARP package.",
+      "source": "releases/Cloudflare/Cloudflare_WARP_2026.6.880.0.pkg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "d2e1a07d5cdce32c16ac52669dcb4848854971982bae713edc2d8aeffca0f469",
+      "label": "Developer ID Application: ESET, spol. s r.o. (P8DQRXPVLP)",
+      "subject": "/UID=P8DQRXPVLP/CN=Developer ID Application: ESET, spol. s r.o. (P8DQRXPVLP)/OU=P8DQRXPVLP/O=ESET, spol. s r.o./C=US",
+      "expires": "2027-01-15T10:55:14Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the app and disk-image evidence in the cited official ESET sample.",
+      "source": "releases/ESET/ees_osx.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "6c1cea934731446d7090e7776dd3f5ee27c7095b2719b3d987295e606b0c8a41",
+      "label": "Developer ID Installer: ESET, spol. s r.o. (P8DQRXPVLP)",
+      "subject": "/UID=P8DQRXPVLP/CN=Developer ID Installer: ESET, spol. s r.o. (P8DQRXPVLP)/OU=P8DQRXPVLP/O=ESET, spol. s r.o./C=US",
+      "expires": "2027-01-15T10:57:07Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the installer package inside the cited official ESET disk image.",
+      "source": "releases/ESET/ees_osx.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "0bda2aca4b967fd15bb6840c54de1cc230921efd1a181a6f0fc814ada3ffaa4f",
+      "label": "Developer ID Application: Google LLC (EQHXZ8M8AV)",
+      "subject": "/UID=EQHXZ8M8AV/CN=Developer ID Application: Google LLC (EQHXZ8M8AV)/OU=EQHXZ8M8AV/O=Google LLC/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Google Chrome DMG.",
+      "source": "releases/Google/googlechrome.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "7de23eb4711378f8d1873e96da740eb209c64a489d27b4c50d3d6e8d79f75c66",
+      "label": "Developer ID Application: Hex-Rays SA (ZP7XF62S2M)",
+      "subject": "/UID=ZP7XF62S2M/CN=Developer ID Application: Hex-Rays SA (ZP7XF62S2M)/OU=ZP7XF62S2M/O=Hex-Rays SA/C=BE",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the IDA Pro app bundle in the cited sample.",
+      "source": "releases/Hex-Rays/ida-pro_94_armmac.app.zip"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "5bf8889a689eb55e366e545ae0132b61c4502aae0693e283894678da1d18c862",
+      "label": "Developer ID Application: Hechen Li (67CQ77V27R)",
+      "subject": "/UID=67CQ77V27R/CN=Developer ID Application: Hechen Li (67CQ77V27R)/OU=67CQ77V27R/O=Hechen Li/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official IINA DMG.",
+      "source": "releases/IINA/IINA.v1.4.4.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "06e8290932dc7f9823a063f3a61b81331ad3282cf8ef41e404e4deb957a9f815",
+      "label": "Developer ID Application: Intuit Inc. (G4SSPX3CBL)",
+      "subject": "/UID=G4SSPX3CBL/CN=Developer ID Application: Intuit Inc. (G4SSPX3CBL)/OU=G4SSPX3CBL/O=Intuit Inc./C=US",
+      "expires": "2027-06-08T17:16:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on QuickBooks 2024.app in the cited locally generated candidate record.",
+      "source": "releases/Intuit/Intuit1.json (candidate from QuickBooks 2024.app)"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "238ddc99a672b22d0515371724ca5fdc4affb1d454e0b443952c691db4f69a24",
+      "label": "Developer ID Application: JetBrains s.r.o. (2ZEFAR8TH3)",
+      "subject": "/UID=2ZEFAR8TH3/CN=Developer ID Application: JetBrains s.r.o. (2ZEFAR8TH3)/OU=2ZEFAR8TH3/O=JetBrains s.r.o./C=CZ",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official IntelliJ IDEA DMG.",
+      "source": "releases/JetBrains/idea-2026.2-aarch64.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "35efa330394de38305fdd2a62f1dd410981179f0126253baa05879591fa85f00",
+      "label": "Developer ID Application: MacPaw Way Ltd (S8EX82NJP6)",
+      "subject": "/UID=S8EX82NJP6/CN=Developer ID Application: MacPaw Way Ltd (S8EX82NJP6)/OU=S8EX82NJP6/O=MacPaw Way Ltd/C=CY",
+      "expires": "2030-02-12T10:23:45Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Gemini 2 DMG.",
+      "source": "releases/MacPaw/Gemini2.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "21fac89e54e5303b2df81ef036ac7e08936634a2ff1342ebbbc018f29518b6b8",
+      "label": "Developer ID Installer: Malwarebytes Corporation (GVZRY6KDKR)",
+      "subject": "/UID=GVZRY6KDKR/CN=Developer ID Installer: Malwarebytes Corporation (GVZRY6KDKR)/OU=GVZRY6KDKR/O=Malwarebytes Corporation/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the cited official Malwarebytes package.",
+      "source": "releases/Malwarebytes/Malwarebytes-Mac-5.24.0.4031.pkg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "c88a602ac1c5e1ffe1ad1303b953d1684399c8c2c2ebf749c3c2bede0a7e1b00",
+      "label": "Developer ID Application: Marius Lupascu (BK8443AXLU)",
+      "subject": "/UID=BK8443AXLU/CN=Developer ID Application: Marius Lupascu (BK8443AXLU)/OU=BK8443AXLU/O=Marius Lupascu/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the official Sentinel app bundle.",
+      "source": "Sentinel.app (official installed sample)"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "ff23fd7dc42a9ff6c75352c9d17632effe7d8433660374477ba65cccbf2247bc",
+      "label": "Developer ID Application: Randy Saldinger (936EB786NH)",
+      "subject": "/UID=936EB786NH/CN=Developer ID Application: Randy Saldinger (936EB786NH)/OU=936EB786NH/O=Randy Saldinger/C=US",
+      "expires": "2029-05-04T17:57:30Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Suspicious Package DMG from Mothers Ruin Software.",
+      "source": "releases/Mothers Ruin/SuspiciousPackage.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "414065984aa423320cc12f38e05ff1b9283a5302aac30b847c58184a1578893a",
+      "label": "Developer ID Application: Objective Development Software GmbH (MLZF7K7B5R)",
+      "subject": "/UID=MLZF7K7B5R/CN=Developer ID Application: Objective Development Software GmbH (MLZF7K7B5R)/OU=MLZF7K7B5R/O=Objective Development Software GmbH/C=AT",
+      "expires": "2028-02-22T13:48:48Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Little Snitch DMG.",
+      "source": "releases/Objective Development/LittleSnitch-6.4.1.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "7bb4c6294b078595b7faffc67767c7fb8eb5d86f7dab29896e78d07f7e3e5031",
+      "label": "Developer ID Application: Objective-See, LLC (VBG97UB4TA)",
+      "subject": "/UID=VBG97UB4TA/CN=Developer ID Application: Objective-See, LLC (VBG97UB4TA)/OU=VBG97UB4TA/O=Objective-See, LLC/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official LuLu DMG.",
+      "source": "releases/Objective-See/LuLu_4.3.2.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "4b585e4a1a5b18d11413c6fa3c3dcec21b2efce44ea2c5b140d4e83ed0626808",
+      "label": "Developer ID Application: The Omni Group (34YW5XSRB7)",
+      "subject": "/UID=34YW5XSRB7/CN=Developer ID Application: The Omni Group (34YW5XSRB7)/OU=34YW5XSRB7/O=The Omni Group/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official OmniOutliner DMG.",
+      "source": "releases/Omni Group/OmniOutliner-6.2.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "04f747c40a6e9b8739fe59da61cc41d9519544659a1009c5f5629577ed57edd5",
+      "label": "Developer ID Application: OpenAI OpCo, LLC (2DC432GLL2)",
+      "subject": "/UID=2DC432GLL2/CN=Developer ID Application: OpenAI OpCo, LLC (2DC432GLL2)/OU=2DC432GLL2/O=OpenAI OpCo, LLC/C=US",
+      "expires": "2031-05-13T15:40:26Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on ChatGPT.app in the cited locally generated candidate record.",
+      "source": "releases/OpenAI/OpenAI1.json (candidate from ChatGPT.app)"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "c35e9fbe4aa0cf7d46864f9f94b285432ab86568c846f23823a63b5d8e2f5c96",
+      "label": "Developer ID Application: Panic, Inc. (VE8FC488U5)",
+      "subject": "/UID=VE8FC488U5/CN=Developer ID Application: Panic, Inc. (VE8FC488U5)/OU=VE8FC488U5/O=Panic, Inc./C=US",
+      "expires": "2027-05-18T17:31:54Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the Transmit app bundle in the cited sample.",
+      "source": "releases/Panic/Transmit 5.11.6.zip"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "b59cdab125faf4659fc784fe51659934309ebe24fcc658fe221fe8b7455babb8",
+      "label": "Developer ID Application: Proton Technologies AG (6UN54H93QT)",
+      "subject": "/UID=6UN54H93QT/CN=Developer ID Application: Proton Technologies AG (6UN54H93QT)/OU=6UN54H93QT/O=Proton Technologies AG/C=CH",
+      "expires": "2028-05-25T10:57:19Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Proton Mail DMG.",
+      "source": "releases/Proton/ProtonMail-desktop.dmg"
+    },
+    {
+      "type": "root-sha256",
+      "hash": "e39f13e30bd842ad7dd9d6cfdded2f87967572f31885c285718a5b7aa3351304",
+      "label": "QiuChenly",
+      "subject": "/CN=QiuChenly/O=QiuChenlyTeam/C=CN",
+      "expires": "2036-02-19T03:32:15Z",
+      "notes": "Self-signed QiuChenly certificate observed on the cited signed DMG.",
+      "source": "releases/QiuChenly/QiuChenAppStore-v1.4.2-2026-07-20.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "4d8cb7352c647da5b63d9439ab745cbaa3705c29679a6e3bdd5ec765d516915f",
+      "label": "Developer ID Application: zhou huabing (HZF9JMC8YN)",
+      "subject": "/UID=HZF9JMC8YN/CN=Developer ID Application: zhou huabing (HZF9JMC8YN)/OU=HZF9JMC8YN/O=zhou huabing/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official RustDesk DMG.",
+      "source": "releases/RustDesk/rustdesk-1.4.9-aarch64.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "b9f1de11271d8522314edb4d9cc5d161f2d57d473ab125ea3680e9f481b1a833",
+      "label": "Developer ID Application: Spotify (2FNC3A47ZF)",
+      "subject": "/UID=2FNC3A47ZF/CN=Developer ID Application: Spotify (2FNC3A47ZF)/OU=2FNC3A47ZF/O=Spotify/C=SE",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Spotify DMG.",
+      "source": "releases/Spotify/SpotifyARM64-1.2.94.583.g60394bd5.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "6c58931c400b66f61e5b4336580fe5a977f74f3299663aec9c7cb7ea9a378d7c",
+      "label": "Developer ID Application: Digital Ignition LLC (5DPYRBHEAR)",
+      "subject": "/UID=5DPYRBHEAR/CN=Developer ID Application: Digital Ignition LLC (5DPYRBHEAR)/OU=5DPYRBHEAR/O=Digital Ignition LLC/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Transmission DMG.",
+      "source": "releases/Transmission/Transmission-4.1.3.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "30def253d38c3e66cc629489fad02861bc4a31c8fdd6a7a02cf2aa952c735e53",
+      "label": "Developer ID Application: Valve Corporation (MXGJJ98X76)",
+      "subject": "/UID=MXGJJ98X76/CN=Developer ID Application: Valve Corporation (MXGJJ98X76)/OU=MXGJJ98X76/O=Valve Corporation/C=US",
+      "expires": "2031-02-07T18:16:35Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official Steam DMG.",
+      "source": "releases/Valve/steam.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "a41a214707b5bfa8189557e6295bfb5075effa376ead08d390e923f890be087b",
+      "label": "Developer ID Application: Vector 35 Inc (6ZMTJ2Y7Q2)",
+      "subject": "/UID=6ZMTJ2Y7Q2/CN=Developer ID Application: Vector 35 Inc (6ZMTJ2Y7Q2)/OU=6ZMTJ2Y7Q2/O=Vector 35 Inc/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the Binary Ninja app bundle in the cited sample.",
+      "source": "releases/Vector 35/binaryninja_macosx_dev_personal v5.4.9825-dev.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "18c6f43adb6ec7ebe6cf88ee94e53cdb27fe4991ad8e20b196ad5315c3a2d4a7",
+      "label": "Developer ID Application: VideoLAN (75GAHG3SZQ)",
+      "subject": "/UID=75GAHG3SZQ/CN=Developer ID Application: VideoLAN (75GAHG3SZQ)/OU=75GAHG3SZQ/O=VideoLAN/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official VLC DMG.",
+      "source": "releases/VideoLAN/vlc-3.0.23-intel64.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "0946175e36e83b599f2145db558485f3397814b8822970105ea6e75b3492a440",
+      "label": "Developer ID Application: VMware, Inc. (EG7KH642X6)",
+      "subject": "/UID=EG7KH642X6/CN=Developer ID Application: VMware, Inc. (EG7KH642X6)/OU=EG7KH642X6/O=VMware, Inc./C=US",
+      "expires": "2027-03-17T04:36:39Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on VMware Fusion.app in the cited locally generated candidate record.",
+      "source": "releases/VMware/VMware1.json (candidate from VMware Fusion.app)"
     }
   ],
   "trustedHelpers": [
