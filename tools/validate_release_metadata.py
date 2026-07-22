@@ -21,6 +21,44 @@ def database_version_key(value: str) -> tuple[int, int, int, int]:
     return tuple(int(part) for part in match.groups())
 
 
+def validate_changelog(root: pathlib.Path, release: dict[str, str]) -> None:
+    changelog_path = root / "CHANGELOG.md"
+    changelog = changelog_path.read_text(encoding="utf-8")
+    if not changelog.startswith("# Changelog\n"):
+        fail("CHANGELOG.md does not begin with the expected title")
+
+    headings = re.findall(
+        r"^## ([0-9A-Za-z.+-]+) \(([0-9.]+)\)$",
+        changelog,
+        flags=re.MULTILINE,
+    )
+    if not headings:
+        fail("CHANGELOG.md does not contain any version headings")
+    expected = (release["version"], release["build"])
+    if headings[0] != expected:
+        fail(
+            "CHANGELOG.md latest entry does not match the current release: "
+            f"expected {expected[0]} ({expected[1]})"
+        )
+    if len(headings) != len(set(headings)):
+        fail("CHANGELOG.md contains a duplicate version and build heading")
+
+    changelog_releases = set(headings)
+    for notes_path in (root / "release-notes").glob("*.md"):
+        match = re.fullmatch(
+            r"v([0-9A-Za-z.+-]+)-([0-9.]+)\.md",
+            notes_path.name,
+        )
+        if match is None:
+            fail(f"unsupported release-notes filename: {notes_path.name}")
+        notes_release = (match.group(1), match.group(2))
+        if notes_release not in changelog_releases:
+            fail(
+                "CHANGELOG.md is missing the release-notes entry for "
+                f"{notes_release[0]} ({notes_release[1]})"
+            )
+
+
 def main() -> int:
     root = pathlib.Path(__file__).resolve().parent.parent
     release = json.loads((root / "docs/release.json").read_text(encoding="utf-8"))
@@ -56,6 +94,8 @@ def main() -> int:
             fail("databaseSHA256 does not match the current public database bytes")
     if not any(entry.get("hash") == release["certificateSHA256"] for entry in database["trustedCertificates"]):
         fail("release signing certificate is not recognized in the public database")
+
+    validate_changelog(root, release)
 
     notes_path = root / "release-notes" / f"{release['tag']}.md"
     documents = {
