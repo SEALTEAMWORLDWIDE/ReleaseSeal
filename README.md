@@ -20,17 +20,17 @@ The Swift GUI and application source are currently maintained in a private repos
 
 ## Current release
 
-- ReleaseSeal: `1.1.0 (26)`
+- ReleaseSeal: `1.1.1 (27)`
 - macOS: `12 or later`
 - Architectures: `arm64 and x86_64 (Universal 2)`
-- Database: `2026.07.22.1`
-- Database SHA-256: `93be7624813d452afc7b0777af0bcadccacf10d44e41c8a294bb9700c422bf55`
+- Database: `2026.07.22.2`
+- Database SHA-256: `478b0bff9e8b8c1aa8267dbca8e6f11f0045fe23d8ff2e6c7ce30cf141d63b31`
 - Signing certificate SHA-256: `5b3320483fc794488cc7caa4c3b6eca9178b7350a20fb38190b106742206b333`
 
 The current release DMG SHA-256 is:
 
 ```text
-1d531ba57936eab541bb6385ce8376b4ff52a4847d64eb5b7cbc364d393fd772  ReleaseSeal-1.1.0-26.dmg
+203ce5db5d44c6aebb1b15187b8d511ed924b8e0afdaf8776b3c461a0ff045a1  ReleaseSeal-1.1.1-27.dmg
 ```
 
 Always compare this value with the checksum attached to the corresponding GitHub Release. A later release will have a different filename and digest.
