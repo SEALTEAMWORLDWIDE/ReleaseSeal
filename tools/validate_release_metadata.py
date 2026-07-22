@@ -77,6 +77,9 @@ def main() -> int:
     certificate_short = release["certificateSHA256"][:16] + "…" + release["certificateSHA256"][-7:]
     if certificate_short not in documents["docs/index.html"]:
         fail("docs/index.html does not contain the expected shortened certificate SHA-256")
+    header_version = f"<small>v{release['version']}</small>"
+    if header_version not in documents["docs/index.html"]:
+        fail("docs/index.html header does not match the current application version")
 
     print("Release metadata validation passed.")
     print(f"Release: {release['version']} ({release['build']})")
