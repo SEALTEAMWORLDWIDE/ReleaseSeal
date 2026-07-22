@@ -9,6 +9,7 @@
   <title>ReleaseSeal - macOS release evidence checker</title>
   <link rel="icon" href="assets/releaseseal-app-icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="screenshots.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -39,6 +40,29 @@
         <div><dt>Architecture</dt><dd>Universal 2 (arm64 and x86_64)</dd></div>
       </dl>
     </section>
+
+    <section class="interface-views" aria-label="ReleaseSeal interface">
+      <figure>
+        <a class="screenshot-trigger" href="assets/releaseseal-window-start.png" data-caption="Ready for inspection" aria-label="Enlarge the ReleaseSeal ready-for-inspection screenshot">
+          <img src="assets/releaseseal-window-start.png" alt="ReleaseSeal ready for a DMG, ISO, PKG, ZIP, or app bundle">
+        </a>
+        <figcaption>Ready for inspection</figcaption>
+      </figure>
+      <figure>
+        <a class="screenshot-trigger" href="assets/releaseseal-window-scan.png" data-caption="Completed scan" aria-label="Enlarge the ReleaseSeal completed-scan screenshot">
+          <img src="assets/releaseseal-window-scan.png" alt="ReleaseSeal showing a completed recognized LuLu scan">
+        </a>
+        <figcaption>Completed scan</figcaption>
+      </figure>
+    </section>
+
+    <dialog class="screenshot-lightbox" id="screenshot-lightbox" aria-label="Enlarged ReleaseSeal screenshot">
+      <div class="screenshot-lightbox-panel">
+        <button class="screenshot-lightbox-close" type="button" aria-label="Close enlarged screenshot">Close</button>
+        <img src="" alt="">
+        <p></p>
+      </div>
+    </dialog>
 
     <section class="doc-section" aria-labelledby="results-title">
       <header class="section-heading">
