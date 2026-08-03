@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0 (28)
+
+- Added a gold OUTER SEAL VERIFIED indicator when the selected artifact is authenticated by a recognized valid signature or exact verified-artifact hash
+- Added structured outer-seal information to command-line, exported, and JSON output
+- Updated machine-readable scan output to schema version 2
+- Clarified outer and nested disk-image evidence in summary output
+- Improved already-mounted disk-image guidance
+- Corrected clipped summary tooltips
+- Added five reviewed certificate records for Image-Line, Blackmagic Design, and Parallels Desktop
+- Expanded the evidence database to 54 certificate records, 1 tracked-file policy, 1 exact verified artifact, and 102 compromised hashes
+
 ## 1.1.1 (27)
 
 - Added DMG, ISO, PKG, ZIP, and app inspection updates introduced after the initial public release
