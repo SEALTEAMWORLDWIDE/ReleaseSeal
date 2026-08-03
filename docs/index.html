@@ -17,7 +17,9 @@
       <a class="brand" href="#top" aria-label="ReleaseSeal home">
         <img src="assets/releaseseal-mark.svg" alt="" width="38" height="38">
         <span>ReleaseSeal</span>
+        <!-- RELEASESEAL_HEADER_VERSION_START -->
         <small>v1.1.1</small>
+        <!-- RELEASESEAL_HEADER_VERSION_END -->
       </a>
       <div class="nav-links">
         <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Releases</a>
@@ -95,6 +97,10 @@
           </tbody>
         </table>
       </div>
+      <aside class="scope-note">
+        <strong>Outer seal</strong>
+        <p>On a green result, the gold <strong>OUTER SEAL VERIFIED</strong> badge means the selected artifact itself was authenticated by a recognized valid signature or an exact verified-artifact hash. It is additional scope information, not a fifth result. A recognized signer found only inside an unsigned outer container does not qualify.</p>
+      </aside>
     </section>
 
     <section id="checks" class="doc-section" aria-labelledby="checks-title">
@@ -122,7 +128,7 @@
         <p class="section-label">Command line</p>
         <h2 id="cli-title">CLI</h2>
         <p>The application bundle includes the <code>releaseseal</code> command-line binary. Its symlink can be installed from the ReleaseSeal application menu.</p>
-        <p>Text, verbose, JSON, and candidate-JSON output are available. Candidate output records unknown evidence without modifying the database.</p>
+        <p>Text, verbose, JSON, and candidate-JSON output are available. JSON scan reports include structured outer-seal scope. Candidate output records unknown evidence without modifying the database.</p>
         <a class="inline-link" href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/blob/main/README.md#command-line-tool">Command-line documentation</a>
       </div>
       <div class="terminal" aria-label="ReleaseSeal command-line examples">
@@ -141,6 +147,7 @@ $ releaseseal --version</code></pre>
         <h2 id="verify-title">Release verification</h2>
         <p>The DMG, checksum, and public signing certificate are attached to the same GitHub Release.</p>
       </header>
+      <!-- RELEASESEAL_VERIFICATION_START -->
       <div class="verify-grid">
         <div class="terminal">
           <div class="terminal-title">ReleaseSeal 1.1.1 (27)</div>
@@ -154,6 +161,7 @@ $ releaseseal --version</code></pre>
           <div><dt>Database SHA-256</dt><dd>478b0bff9e8b…41d63b31</dd></div>
         </dl>
       </div>
+      <!-- RELEASESEAL_VERIFICATION_END -->
       <div class="verify-links">
         <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/releases/latest">Release files</a>
         <a href="https://github.com/SEALTEAMWORLDWIDE/ReleaseSeal/blob/main/README.md#verify-releaseseal">Verification commands</a>

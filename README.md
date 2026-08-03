@@ -20,6 +20,8 @@ The Swift GUI and application source are currently maintained in a private repos
 
 ## Current release
 
+<!-- RELEASESEAL_CURRENT_RELEASE_START -->
+
 - ReleaseSeal: `1.1.1 (27)`
 - macOS: `12 or later`
 - Architectures: `arm64 and x86_64 (Universal 2)`
@@ -34,6 +36,7 @@ The current release DMG SHA-256 is:
 ```
 
 Always compare this value with the checksum attached to the corresponding GitHub Release. A later release will have a different filename and digest.
+<!-- RELEASESEAL_CURRENT_RELEASE_END -->
 
 ## Verify ReleaseSeal
 
@@ -99,6 +102,8 @@ releaseseal --help
 
 Exit statuses are 0 for recognized identity and integrity evidence, 1 for review, 2 for invalid or compromised evidence, and 3 for an incomplete scan or command error. Run `releaseseal --help` for the complete option list.
 
+Normal `--json` scan reports use output schema version 2. The `outerSeal` object records whether the selected artifact itself was verified, the method (`recognized-signature`, `exact-artifact`, or `none`), the `selected-artifact` scope, and the recognized signer when applicable. This field does not change verdict or exit-status meanings.
+
 ## What the verdicts mean
 
 - Seal of Approval: reviewed identity or exact-artifact evidence matched and the applicable outer integrity checks passed.
@@ -107,6 +112,8 @@ Exit statuses are 0 for recognized identity and integrity evidence, 1 for review
 - Known Bad Catch: a certificate or artifact hash matched a compromised or revoked database entry.
 
 Outer signed-container evidence matters. For example, a recognized, valid signed DMG confirms the bytes of the DMG as signed even when a modified app inside it retains broken inner signing evidence. ReleaseSeal still reports the inner state so users can understand both layers.
+
+On a green result, the gold **OUTER SEAL VERIFIED** badge means the selected artifact itself was authenticated by a recognized valid signature or an exact verified-artifact hash. It is additional scope information, not a fifth result class. A recognized signer found only inside an unsigned outer container does not receive the badge.
 
 ## Privacy and network behavior
 

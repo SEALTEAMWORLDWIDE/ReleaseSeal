@@ -12,6 +12,7 @@ fail() {
 python3 tools/validate_database.py
 python3 tools/render_database_summary.py --check
 python3 tools/validate_release_metadata.py
+python3 -m unittest tools/test_prepare_app_release.py
 
 if find . -path './release-staging' -prune -o -type f \( \
     -name '.DS_Store' -o -name '._*' -o -name '*.p12' -o -name '*.pfx' -o \

@@ -2,10 +2,10 @@
 
 This file is generated from `ReleaseSealDatabase.json`. The JSON database is authoritative.
 
-- Database version: `2026.07.22.2`
-- Release date: `2026-07-22`
-- Database SHA-256: `478b0bff9e8b8c1aa8267dbca8e6f11f0045fe23d8ff2e6c7ce30cf141d63b31`
-- Trusted certificate entries: `49`
+- Database version: `2026.08.03.1`
+- Release date: `2026-08-03`
+- Database SHA-256: `246ecc17686893ad656050fbadfc5795da9788822a17b9884ac7533a2666b27a`
+- Trusted certificate entries: `54`
 - Tracked file entries: `1`
 - Exact verified artifacts: `1`
 - Compromised or revoked entries: `102`
@@ -29,6 +29,8 @@ ReleaseSeal also recognizes valid Apple-anchored Mac App Store signatures direct
 | Antibiotics | `root-sha256` `f1516a983975b6c0847c59fa12291b1f16d3a10718d742a3904949b98a2f8ccd` | 2034-06-13 |
 | Software Signing | `leaf-sha256` `d84db96af8c2e60ac4c851a21ec460f6f84e0235beb17d24a78712b9b021ed57` | 2026-10-24 |
 | aqzs | `root-sha256` `90f605071bf3418ae709f1ebd03d98739689d476309b18c42c9462d81fe47def` | 2045-06-21 |
+| Developer ID Application: Blackmagic Design Inc (9ZGFBWLSYP) | `leaf-sha256` `2bb12497bb2dcc3eed41bc6b42d267f4aecc596f68fb674c016d68f7edd42a08` | 2027-02-01 |
+| Developer ID Installer: Blackmagic Design Inc (9ZGFBWLSYP) | `leaf-sha256` `af99b9b49b71ee20decffb7376f287669714ee1114419d0741ec942ab0be16c1` | 2027-02-01 |
 | Developer ID Application: Canva Pty Ltd (5HD2ARTBFS) | `leaf-sha256` `7ccff00abba59a11328f439df95f0c37c2d4cd511370d488bd1ae4a35bc10e68` | 2027-02-01 |
 | Developer ID Application: Charles Srstka (HRLUCP7QP4) | `leaf-sha256` `7927d5446a1aa4935588e537f3a3295ee9aaf377a8cfeebfef16782340953e1f` | 2027-02-01 |
 | Developer ID Installer: Cloudflare Inc. (68WVV388M8) | `leaf-sha256` `46938d196c953873d0de78ebbc02ea97793c41a2761a255a6042f74a0deaa916` | 2029-12-14 |
@@ -42,6 +44,8 @@ ReleaseSeal also recognizes valid Apple-anchored Mac App Store signatures direct
 | Developer ID Application: TEAM HCiSO (76TX64X7HC) | `leaf-sha256` `861b660daec7fb0246375add56083fab34d6d06f27d028e73268c17d2c39ce37` | 2030-09-01 |
 | Developer ID Application: Hechen Li (67CQ77V27R) | `leaf-sha256` `5bf8889a689eb55e366e545ae0132b61c4502aae0693e283894678da1d18c862` | 2027-02-01 |
 | Developer ID Application: Hex-Rays SA (ZP7XF62S2M) | `leaf-sha256` `7de23eb4711378f8d1873e96da740eb209c64a489d27b4c50d3d6e8d79f75c66` | 2027-02-01 |
+| Developer ID Installer: image-line (N68WEP5ZZZ) | `leaf-sha256` `bda38fe568443597244a45945c687ab2dbf7e010d01b84c5f287c77d13e56252` | 2027-10-25 |
+| Developer ID Application: image-line (N68WEP5ZZZ) | `leaf-sha256` `e9bf48e8dd195facd196dda3d0991d3e429d3fd5a0c7a5511c7e091ce3376716` | 2027-02-01 |
 | Developer ID Application: Intuit Inc. (G4SSPX3CBL) | `leaf-sha256` `06e8290932dc7f9823a063f3a61b81331ad3282cf8ef41e404e4deb957a9f815` | 2027-06-08 |
 | Developer ID Application: JetBrains s.r.o. (2ZEFAR8TH3) | `leaf-sha256` `238ddc99a672b22d0515371724ca5fdc4affb1d454e0b443952c691db4f69a24` | 2027-02-01 |
 | LOVE | `root-sha256` `b04e6205e1d78eb9c4cb87a6651e50bb3110f6f50110c61fdefb884e722fde7c` | 2222-02-02 |
@@ -57,6 +61,7 @@ ReleaseSeal also recognizes valid Apple-anchored Mac App Store signatures direct
 | Developer ID Application: The Omni Group (34YW5XSRB7) | `leaf-sha256` `4b585e4a1a5b18d11413c6fa3c3dcec21b2efce44ea2c5b140d4e83ed0626808` | 2027-02-01 |
 | Developer ID Application: OpenAI OpCo, LLC (2DC432GLL2) | `leaf-sha256` `04f747c40a6e9b8739fe59da61cc41d9519544659a1009c5f5629577ed57edd5` | 2031-05-13 |
 | Developer ID Application: Panic, Inc. (VE8FC488U5) | `leaf-sha256` `c35e9fbe4aa0cf7d46864f9f94b285432ab86568c846f23823a63b5d8e2f5c96` | 2027-05-18 |
+| Developer ID Application: Parallels International GmbH (4C6364ACXT) | `leaf-sha256` `60c653d49a41fe348d048b747c0c3f3044bd0538d627b10816288383c15a80d3` | 2027-02-01 |
 | Developer ID Application: Proton Technologies AG (6UN54H93QT) | `leaf-sha256` `b59cdab125faf4659fc784fe51659934309ebe24fcc658fe221fe8b7455babb8` | 2028-05-25 |
 | QiuChenly | `root-sha256` `e39f13e30bd842ad7dd9d6cfdded2f87967572f31885c285718a5b7aa3351304` | 2036-02-19 |
 | Developer ID Application: Randy Saldinger (936EB786NH) | `leaf-sha256` `ff23fd7dc42a9ff6c75352c9d17632effe7d8433660374477ba65cccbf2247bc` | 2029-05-04 |

@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "metadata": {
     "name": "ReleaseSeal evidence database",
-    "databaseVersion": "2026.07.22.2",
-    "releaseDate": "2026-07-22",
+    "databaseVersion": "2026.08.03.1",
+    "releaseDate": "2026-08-03",
     "notes": "Trusted entries are allowlist evidence only; compromised entries take precedence."
   },
   "trustedCertificates": [
@@ -14,7 +14,7 @@
       "subject": "/CN=Dokdo, Beautiful Island/O=Dokdo, Beautiful Island/OU=For Educational Purposes Only/ST=Beautiful Island/C=DE/L=Dokdo",
       "expires": "2035-09-20T02:00:00Z",
       "notes": "Self-signed release-group certificate observed on the app bundle in the cited sample.",
-      "source": "releases/Dokdo/Araxis Merge Professional 2026.0 [Dokdo].dmg"
+      "source": "Araxis Merge Professional 2026.0 [Dokdo].dmg"
     },
     {
       "type": "root-sha256",
@@ -23,7 +23,7 @@
       "subject": "/CN=Antibiotics/O=MSJ/C=CN",
       "expires": "2034-06-13T13:08:07Z",
       "notes": "Self-signed release-group certificate observed on both the DMG and app bundle in the cited sample.",
-      "source": "releases/ATB/Vibe Island 1.0.34 [atb].dmg"
+      "source": "Vibe Island 1.0.34 [atb].dmg"
     },
     {
       "type": "root-sha256",
@@ -32,7 +32,7 @@
       "subject": "/O=MacKed/OU=https://macked.app/CN=https://macked.app/emailAddress=codesign@macked.app",
       "expires": "2099-12-31T23:59:59Z",
       "notes": "Self-signed release-group certificate observed on the app bundle; the embedded common name is https://macked.app.",
-      "source": "releases/MacKed/Vehla 6.3 [MacKed].dmg"
+      "source": "Vehla 6.3 [MacKed].dmg"
     },
     {
       "type": "leaf-sha256",
@@ -41,7 +41,7 @@
       "subject": "/C=US/O=TEAM HCiSO/OU=76TX64X7HC/CN=Developer ID Application: TEAM HCiSO (76TX64X7HC)",
       "expires": "2030-09-01T23:59:59Z",
       "notes": "Apple-issued Developer ID Application certificate used by TEAM HCiSO on the app bundle; identity is matched only by its leaf fingerprint.",
-      "source": "releases/HCiSO/UltraEdit_25.0.0.11_[HCiSO].dmg"
+      "source": "UltraEdit_25.0.0.11_[HCiSO].dmg"
     },
     {
       "type": "root-sha256",
@@ -50,7 +50,7 @@
       "subject": "/CN=TNT/O=TNT - why join the navy if you can be a pirate/C=RU/emailAddress=tnt4mac@tuta.io",
       "expires": "2027-06-09T15:37:11Z",
       "notes": "Self-signed release-group certificate observed on the app bundle in the cited sample.",
-      "source": "releases/TNT/Qbserve_1.91_[TNT].dmg"
+      "source": "Qbserve_1.91_[TNT].dmg"
     },
     {
       "type": "root-sha256",
@@ -59,7 +59,7 @@
       "subject": "/CN=TNT/O=TNT - why join the navy if you can be a pirate/OU=TNT2019STW/C=RU/emailAddress=tnt4mac@tuta.io",
       "expires": "2035-05-09T08:37:13Z",
       "notes": "Self-signed TNT certificate observed on the valid app-bundle seal in the cited sample. The outer DMG is unsigned.",
-      "source": "releases/TNT/Typora_1.10.6_[TNT].dmg"
+      "source": "Typora_1.10.6_[TNT].dmg"
     },
     {
       "type": "root-sha256",
@@ -68,7 +68,7 @@
       "subject": "/CN=TEAM EDiSO/O=TEAM EDiSO/C=AU/emailAddress=please@fuck.off",
       "expires": "2035-06-21T23:50:08Z",
       "notes": "Self-signed release-group certificate observed on the app bundle. Provenance confirmed from a direct EDiSO release.",
-      "source": "releases/EDiSO/OmniOutliner 6.2 [EDiSO].dmg"
+      "source": "OmniOutliner 6.2 [EDiSO].dmg"
     },
     {
       "type": "root-sha256",
@@ -77,7 +77,7 @@
       "subject": "/CN=aqzs/O=aqzs/ST=France/C=FR/L=Paris/emailAddress=aqzs@msj.com",
       "expires": "2045-06-21T16:38:45Z",
       "notes": "Self-signed aqzs certificate observed on the valid app-bundle seal in the cited sample. The outer DMG is unsigned.",
-      "source": "releases/aqzs/Paragraphic 1.2.4 [aqzs] [U2B].dmg"
+      "source": "Paragraphic 1.2.4 [aqzs] [U2B].dmg"
     },
     {
       "type": "root-sha256",
@@ -86,7 +86,7 @@
       "subject": "/CN=LOVE",
       "expires": "2222-02-02T22:22:22Z",
       "notes": "Self-signed LOVE certificate observed on the valid app-bundle seal in the cited verified release. The outer DMG is unsigned.",
-      "source": "releases/LOVE/Vibe Island 1.0.41 [LOVE].dmg"
+      "source": "Vibe Island 1.0.41 [LOVE].dmg"
     },
     {
       "type": "root-sha256",
@@ -95,7 +95,7 @@
       "subject": "/CN=SEAL TEAM WORLDWIDE/O=SEAL TEAM WORLDWIDE/C=AU",
       "expires": "2038-04-20T19:48:15Z",
       "notes": "Self-signed ReleaseSeal project identity validated on both the test app bundle and its signed outer DMG.",
-      "source": "test_app/ReleaseSeal-SEAL-TEAM-WORLDWIDE-Test.dmg"
+      "source": "ReleaseSeal-SEAL-TEAM-WORLDWIDE-Test.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -104,7 +104,7 @@
       "subject": "/UID=MWR434WD94/CN=Developer ID Application: Ableton AG (MWR434WD94)/OU=MWR434WD94/O=Ableton AG/C=DE",
       "expires": "2027-01-28T11:34:32Z",
       "notes": "Apple-issued Developer ID Application certificate observed on an official Ableton trial DMG downloaded from Ableton.",
-      "source": "releases/Ableton/ableton_live_trial_12.4.3_universal-og.dmg"
+      "source": "ableton_live_trial_12.4.3_universal-og.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -113,7 +113,7 @@
       "subject": "/UID=UBF8T346G9/CN=Developer ID Installer: Microsoft Corporation (UBF8T346G9)/OU=UBF8T346G9/O=Microsoft Corporation/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on an official Microsoft 365 and Office installer package.",
-      "source": "releases/Microsoft/Microsoft_365_and_Office_16.111.26071325_Installer.pkg"
+      "source": "Microsoft_365_and_Office_16.111.26071325_Installer.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -122,7 +122,7 @@
       "subject": "/UID=5HD2ARTBFS/CN=Developer ID Application: Canva Pty Ltd (5HD2ARTBFS)/OU=5HD2ARTBFS/O=Canva Pty Ltd/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the app bundle inside the cited official Canva DMG. The outer DMG is unsigned.",
-      "source": "releases/Canva/Affinity_3.2.2.4557_20260617_080328.dmg"
+      "source": "Affinity_3.2.2.4557_20260617_080328.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -131,7 +131,7 @@
       "subject": "/UID=JQ525L2MZD/CN=Developer ID Application: Adobe Systems, Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Systems, Inc./C=US",
       "expires": "2022-02-11T00:05:48Z",
       "notes": "Historical Apple-issued Developer ID Application certificate observed on the signed official Adobe Creative Cloud DMG. Its signature includes a trusted timestamp from before certificate expiration.",
-      "source": "releases/Adobe/ACCCx4_9_0_504.dmg"
+      "source": "ACCCx4_9_0_504.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -140,7 +140,7 @@
       "subject": "/UID=JQ525L2MZD/CN=Developer ID Application: Adobe Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Inc./C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on official Adobe Creative Cloud and Acrobat DMGs.",
-      "source": "releases/Adobe/ACCCx6_10_0_252_3.dmg"
+      "source": "ACCCx6_10_0_252_3.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -149,7 +149,7 @@
       "subject": "/UID=JQ525L2MZD/CN=Developer ID Installer: Adobe Inc. (JQ525L2MZD)/OU=JQ525L2MZD/O=Adobe Inc./C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on the notarized Acrobat installer package inside the cited official Adobe DMG.",
-      "source": "releases/Adobe/AcrobatSCA_DC_Web_WWMUI.dmg :: Acrobat/Acrobat DC SCA Installer.pkg"
+      "source": "Acrobat DC SCA Installer.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -158,7 +158,7 @@
       "subject": "/UID=2BUA8C4S2C/CN=Developer ID Application: AgileBits Inc. (2BUA8C4S2C)/OU=2BUA8C4S2C/O=AgileBits Inc./C=CA",
       "expires": "2029-05-02T14:25:42Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the 1Password app bundle in the cited sample.",
-      "source": "releases/AgileBits/1Password.zip"
+      "source": "1Password.zip"
     },
     {
       "type": "leaf-sha256",
@@ -167,7 +167,7 @@
       "subject": "/UID=Q6L2SF6YDW/CN=Developer ID Application: Anthropic PBC (Q6L2SF6YDW)/OU=Q6L2SF6YDW/O=Anthropic PBC/C=US",
       "expires": "2031-05-30T16:28:47Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Claude DMG.",
-      "source": "releases/Anthropic/Claude.dmg"
+      "source": "Claude.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -176,7 +176,25 @@
       "subject": "/C=US/O=Apple Inc./OU=Apple Software/CN=Software Signing",
       "expires": "2026-10-24T17:39:41Z",
       "notes": "Apple software-signing certificate observed on Safari.app in the cited locally generated candidate record.",
-      "source": "releases/Apple/apple1.json (candidate from Safari.app)"
+      "source": "Safari.app"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "2bb12497bb2dcc3eed41bc6b42d267f4aecc596f68fb674c016d68f7edd42a08",
+      "label": "Developer ID Application: Blackmagic Design Inc (9ZGFBWLSYP)",
+      "subject": "/UID=9ZGFBWLSYP/CN=Developer ID Application: Blackmagic Design Inc (9ZGFBWLSYP)/OU=9ZGFBWLSYP/O=Blackmagic Design Inc/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the valid uninstaller app in the official DaVinci Resolve Studio DMG; the outer DMG is unsigned.",
+      "source": "Uninstall Resolve.app"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "af99b9b49b71ee20decffb7376f287669714ee1114419d0741ec942ab0be16c1",
+      "label": "Developer ID Installer: Blackmagic Design Inc (9ZGFBWLSYP)",
+      "subject": "/UID=9ZGFBWLSYP/CN=Developer ID Installer: Blackmagic Design Inc (9ZGFBWLSYP)/OU=9ZGFBWLSYP/O=Blackmagic Design Inc/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the signed and notarized installer package in the official DaVinci Resolve Studio DMG; the outer DMG is unsigned.",
+      "source": "Install Resolve 21.0.3.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -185,7 +203,7 @@
       "subject": "/UID=75FD6A6E5A/CN=Developer ID Application: Mark Allan (75FD6A6E5A)/OU=75FD6A6E5A/O=Mark Allan/C=GB",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the ClamXAV app distributed by Canimaan Software.",
-      "source": "releases/Canimaan/ClamXAV.app"
+      "source": "ClamXAV.app"
     },
     {
       "type": "leaf-sha256",
@@ -194,7 +212,7 @@
       "subject": "/UID=75FD6A6E5A/CN=Developer ID Installer: Mark Allan (75FD6A6E5A)/OU=75FD6A6E5A/O=Mark Allan/C=GB",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on the ClamXAV installer distributed by Canimaan Software.",
-      "source": "releases/Canimaan/ClamXAV_3.10.2_11619_Installer.pkg"
+      "source": "ClamXAV_3.10.2_11619_Installer.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -203,7 +221,7 @@
       "subject": "/UID=HRLUCP7QP4/CN=Developer ID Application: Charles Srstka (HRLUCP7QP4)/OU=HRLUCP7QP4/O=Charles Srstka/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the Pacifist app bundle in the cited CharlesSoft sample.",
-      "source": "releases/CharlesSoft/Pacifist_4.1.4.zip"
+      "source": "Pacifist_4.1.4.zip"
     },
     {
       "type": "leaf-sha256",
@@ -212,7 +230,7 @@
       "subject": "/UID=68WVV388M8/CN=Developer ID Application: Cloudflare Inc. (68WVV388M8)/OU=68WVV388M8/O=Cloudflare Inc./C=US",
       "expires": "2029-12-14T16:19:44Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the Cloudflare WARP app bundle.",
-      "source": "releases/Cloudflare/Cloudflare WARP.app"
+      "source": "Cloudflare WARP.app"
     },
     {
       "type": "leaf-sha256",
@@ -221,7 +239,7 @@
       "subject": "/UID=68WVV388M8/CN=Developer ID Installer: Cloudflare Inc. (68WVV388M8)/OU=68WVV388M8/O=Cloudflare Inc./C=US",
       "expires": "2029-12-14T16:14:05Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on the cited Cloudflare WARP package.",
-      "source": "releases/Cloudflare/Cloudflare_WARP_2026.6.880.0.pkg"
+      "source": "Cloudflare_WARP_2026.6.880.0.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -230,7 +248,7 @@
       "subject": "/UID=P8DQRXPVLP/CN=Developer ID Application: ESET, spol. s r.o. (P8DQRXPVLP)/OU=P8DQRXPVLP/O=ESET, spol. s r.o./C=US",
       "expires": "2027-01-15T10:55:14Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the app and disk-image evidence in the cited official ESET sample.",
-      "source": "releases/ESET/ees_osx.dmg"
+      "source": "ees_osx.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -239,7 +257,7 @@
       "subject": "/UID=P8DQRXPVLP/CN=Developer ID Installer: ESET, spol. s r.o. (P8DQRXPVLP)/OU=P8DQRXPVLP/O=ESET, spol. s r.o./C=US",
       "expires": "2027-01-15T10:57:07Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on the installer package inside the cited official ESET disk image.",
-      "source": "releases/ESET/ees_osx.dmg"
+      "source": "ees_osx.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -248,7 +266,7 @@
       "subject": "/UID=EQHXZ8M8AV/CN=Developer ID Application: Google LLC (EQHXZ8M8AV)/OU=EQHXZ8M8AV/O=Google LLC/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Google Chrome DMG.",
-      "source": "releases/Google/googlechrome.dmg"
+      "source": "googlechrome.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -257,7 +275,7 @@
       "subject": "/UID=ZP7XF62S2M/CN=Developer ID Application: Hex-Rays SA (ZP7XF62S2M)/OU=ZP7XF62S2M/O=Hex-Rays SA/C=BE",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the IDA Pro app bundle in the cited sample.",
-      "source": "releases/Hex-Rays/ida-pro_94_armmac.app.zip"
+      "source": "ida-pro_94_armmac.app.zip"
     },
     {
       "type": "leaf-sha256",
@@ -266,7 +284,25 @@
       "subject": "/UID=67CQ77V27R/CN=Developer ID Application: Hechen Li (67CQ77V27R)/OU=67CQ77V27R/O=Hechen Li/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official IINA DMG.",
-      "source": "releases/IINA/IINA.v1.4.4.dmg"
+      "source": "IINA.v1.4.4.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "e9bf48e8dd195facd196dda3d0991d3e429d3fd5a0c7a5511c7e091ce3376716",
+      "label": "Developer ID Application: image-line (N68WEP5ZZZ)",
+      "subject": "/UID=N68WEP5ZZZ/CN=Developer ID Application: image-line (N68WEP5ZZZ)/OU=N68WEP5ZZZ/O=image-line/C=BE",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed on the cited official FL Studio installer DMG.",
+      "source": "flstudio_mac_26.1.3.5336.dmg"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "bda38fe568443597244a45945c687ab2dbf7e010d01b84c5f287c77d13e56252",
+      "label": "Developer ID Installer: image-line (N68WEP5ZZZ)",
+      "subject": "/UID=N68WEP5ZZZ/CN=Developer ID Installer: image-line (N68WEP5ZZZ)/OU=N68WEP5ZZZ/O=image-line/C=BE",
+      "expires": "2027-10-25T13:05:28Z",
+      "notes": "Apple-issued Developer ID Installer certificate observed on the cited official FL Studio installer package.",
+      "source": "Install FL Studio.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -275,7 +311,7 @@
       "subject": "/UID=G4SSPX3CBL/CN=Developer ID Application: Intuit Inc. (G4SSPX3CBL)/OU=G4SSPX3CBL/O=Intuit Inc./C=US",
       "expires": "2027-06-08T17:16:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on QuickBooks 2024.app in the cited locally generated candidate record.",
-      "source": "releases/Intuit/Intuit1.json (candidate from QuickBooks 2024.app)"
+      "source": "QuickBooks 2024.app"
     },
     {
       "type": "leaf-sha256",
@@ -284,7 +320,7 @@
       "subject": "/UID=2ZEFAR8TH3/CN=Developer ID Application: JetBrains s.r.o. (2ZEFAR8TH3)/OU=2ZEFAR8TH3/O=JetBrains s.r.o./C=CZ",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official IntelliJ IDEA DMG.",
-      "source": "releases/JetBrains/idea-2026.2-aarch64.dmg"
+      "source": "idea-2026.2-aarch64.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -293,7 +329,7 @@
       "subject": "/UID=S8EX82NJP6/CN=Developer ID Application: MacPaw Way Ltd (S8EX82NJP6)/OU=S8EX82NJP6/O=MacPaw Way Ltd/C=CY",
       "expires": "2030-02-12T10:23:45Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Gemini 2 DMG.",
-      "source": "releases/MacPaw/Gemini2.dmg"
+      "source": "Gemini2.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -302,7 +338,7 @@
       "subject": "/UID=GVZRY6KDKR/CN=Developer ID Installer: Malwarebytes Corporation (GVZRY6KDKR)/OU=GVZRY6KDKR/O=Malwarebytes Corporation/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Installer certificate observed on the cited official Malwarebytes package.",
-      "source": "releases/Malwarebytes/Malwarebytes-Mac-5.24.0.4031.pkg"
+      "source": "Malwarebytes-Mac-5.24.0.4031.pkg"
     },
     {
       "type": "leaf-sha256",
@@ -320,7 +356,7 @@
       "subject": "/UID=936EB786NH/CN=Developer ID Application: Randy Saldinger (936EB786NH)/OU=936EB786NH/O=Randy Saldinger/C=US",
       "expires": "2029-05-04T17:57:30Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Suspicious Package DMG from Mothers Ruin Software.",
-      "source": "releases/Mothers Ruin/SuspiciousPackage.dmg"
+      "source": "SuspiciousPackage.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -329,7 +365,7 @@
       "subject": "/UID=MLZF7K7B5R/CN=Developer ID Application: Objective Development Software GmbH (MLZF7K7B5R)/OU=MLZF7K7B5R/O=Objective Development Software GmbH/C=AT",
       "expires": "2028-02-22T13:48:48Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Little Snitch DMG.",
-      "source": "releases/Objective Development/LittleSnitch-6.4.1.dmg"
+      "source": "LittleSnitch-6.4.1.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -338,7 +374,7 @@
       "subject": "/UID=VBG97UB4TA/CN=Developer ID Application: Objective-See, LLC (VBG97UB4TA)/OU=VBG97UB4TA/O=Objective-See, LLC/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official LuLu DMG.",
-      "source": "releases/Objective-See/LuLu_4.3.2.dmg"
+      "source": "LuLu_4.3.2.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -347,7 +383,7 @@
       "subject": "/UID=34YW5XSRB7/CN=Developer ID Application: The Omni Group (34YW5XSRB7)/OU=34YW5XSRB7/O=The Omni Group/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official OmniOutliner DMG.",
-      "source": "releases/Omni Group/OmniOutliner-6.2.dmg"
+      "source": "OmniOutliner-6.2.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -356,7 +392,7 @@
       "subject": "/UID=2DC432GLL2/CN=Developer ID Application: OpenAI OpCo, LLC (2DC432GLL2)/OU=2DC432GLL2/O=OpenAI OpCo, LLC/C=US",
       "expires": "2031-05-13T15:40:26Z",
       "notes": "Apple-issued Developer ID Application certificate observed on ChatGPT.app in the cited locally generated candidate record.",
-      "source": "releases/OpenAI/OpenAI1.json (candidate from ChatGPT.app)"
+      "source": "ChatGPT.app"
     },
     {
       "type": "leaf-sha256",
@@ -365,7 +401,16 @@
       "subject": "/UID=VE8FC488U5/CN=Developer ID Application: Panic, Inc. (VE8FC488U5)/OU=VE8FC488U5/O=Panic, Inc./C=US",
       "expires": "2027-05-18T17:31:54Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the Transmit app bundle in the cited sample.",
-      "source": "releases/Panic/Transmit 5.11.6.zip"
+      "source": "Transmit 5.11.6.zip"
+    },
+    {
+      "type": "leaf-sha256",
+      "hash": "60c653d49a41fe348d048b747c0c3f3044bd0538d627b10816288383c15a80d3",
+      "label": "Developer ID Application: Parallels International GmbH (4C6364ACXT)",
+      "subject": "/UID=4C6364ACXT/CN=Developer ID Application: Parallels International GmbH (4C6364ACXT)/OU=4C6364ACXT/O=Parallels International GmbH/C=US",
+      "expires": "2027-02-01T22:12:15Z",
+      "notes": "Apple-issued Developer ID Application certificate observed as identical certificate bytes on both the valid, notarized official installer DMG and its valid installer app bundle.",
+      "source": "Install Parallels Desktop.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -374,7 +419,7 @@
       "subject": "/UID=6UN54H93QT/CN=Developer ID Application: Proton Technologies AG (6UN54H93QT)/OU=6UN54H93QT/O=Proton Technologies AG/C=CH",
       "expires": "2028-05-25T10:57:19Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Proton Mail DMG.",
-      "source": "releases/Proton/ProtonMail-desktop.dmg"
+      "source": "ProtonMail-desktop.dmg"
     },
     {
       "type": "root-sha256",
@@ -383,7 +428,7 @@
       "subject": "/CN=QiuChenly/O=QiuChenlyTeam/C=CN",
       "expires": "2036-02-19T03:32:15Z",
       "notes": "Self-signed QiuChenly certificate observed on the cited signed DMG.",
-      "source": "releases/QiuChenly/QiuChenAppStore-v1.4.2-2026-07-20.dmg"
+      "source": "QiuChenAppStore-v1.4.2-2026-07-20.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -392,7 +437,7 @@
       "subject": "/UID=HZF9JMC8YN/CN=Developer ID Application: zhou huabing (HZF9JMC8YN)/OU=HZF9JMC8YN/O=zhou huabing/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official RustDesk DMG.",
-      "source": "releases/RustDesk/rustdesk-1.4.9-aarch64.dmg"
+      "source": "rustdesk-1.4.9-aarch64.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -401,7 +446,7 @@
       "subject": "/UID=2FNC3A47ZF/CN=Developer ID Application: Spotify (2FNC3A47ZF)/OU=2FNC3A47ZF/O=Spotify/C=SE",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Spotify DMG.",
-      "source": "releases/Spotify/SpotifyARM64-1.2.94.583.g60394bd5.dmg"
+      "source": "SpotifyARM64-1.2.94.583.g60394bd5.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -410,7 +455,7 @@
       "subject": "/UID=5DPYRBHEAR/CN=Developer ID Application: Digital Ignition LLC (5DPYRBHEAR)/OU=5DPYRBHEAR/O=Digital Ignition LLC/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Transmission DMG.",
-      "source": "releases/Transmission/Transmission-4.1.3.dmg"
+      "source": "Transmission-4.1.3.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -419,7 +464,7 @@
       "subject": "/UID=MXGJJ98X76/CN=Developer ID Application: Valve Corporation (MXGJJ98X76)/OU=MXGJJ98X76/O=Valve Corporation/C=US",
       "expires": "2031-02-07T18:16:35Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official Steam DMG.",
-      "source": "releases/Valve/steam.dmg"
+      "source": "steam.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -428,7 +473,7 @@
       "subject": "/UID=6ZMTJ2Y7Q2/CN=Developer ID Application: Vector 35 Inc (6ZMTJ2Y7Q2)/OU=6ZMTJ2Y7Q2/O=Vector 35 Inc/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the Binary Ninja app bundle in the cited sample.",
-      "source": "releases/Vector 35/binaryninja_macosx_dev_personal v5.4.9825-dev.dmg"
+      "source": "binaryninja_macosx_dev_personal v5.4.9825-dev.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -437,7 +482,7 @@
       "subject": "/UID=75GAHG3SZQ/CN=Developer ID Application: VideoLAN (75GAHG3SZQ)/OU=75GAHG3SZQ/O=VideoLAN/C=US",
       "expires": "2027-02-01T22:12:15Z",
       "notes": "Apple-issued Developer ID Application certificate observed on the cited official VLC DMG.",
-      "source": "releases/VideoLAN/vlc-3.0.23-intel64.dmg"
+      "source": "vlc-3.0.23-intel64.dmg"
     },
     {
       "type": "leaf-sha256",
@@ -446,7 +491,7 @@
       "subject": "/UID=EG7KH642X6/CN=Developer ID Application: VMware, Inc. (EG7KH642X6)/OU=EG7KH642X6/O=VMware, Inc./C=US",
       "expires": "2027-03-17T04:36:39Z",
       "notes": "Apple-issued Developer ID Application certificate observed on VMware Fusion.app in the cited locally generated candidate record.",
-      "source": "releases/VMware/VMware1.json (candidate from VMware Fusion.app)"
+      "source": "VMware Fusion.app"
     }
   ],
   "trustedHelpers": [
@@ -463,7 +508,7 @@
       "sha256": [
         "45f8b43453cb19232902844bfde4af6471f3762880f23e968bfca28a33c26817"
       ],
-      "source": "releases/TNT/Qbserve_1.91_[TNT].dmg",
+      "source": "Qbserve_1.91_[TNT].dmg",
       "notes": "Known TNT helper script. Filename matching is case-insensitive."
     }
   ],
@@ -473,7 +518,7 @@
       "hash": "aa7d1ce13666885acd3747b7219e7093624b43ecba27ef0c32421bc4f6a1e30b",
       "label": "Vibe Island 1.0.34 [atb]",
       "verifiedAt": "2026-07-12",
-      "source": "releases/ATB/Vibe Island 1.0.34 [atb].dmg",
+      "source": "Vibe Island 1.0.34 [atb].dmg",
       "notes": "Exact DMG bytes confirmed as a verified Antibiotics release."
     }
   ],
