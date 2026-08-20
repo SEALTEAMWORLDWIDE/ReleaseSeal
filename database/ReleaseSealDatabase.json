@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "metadata": {
     "name": "ReleaseSeal evidence database",
-    "databaseVersion": "2026.08.03.1",
-    "releaseDate": "2026-08-03",
+    "databaseVersion": "2026.08.20.1",
+    "releaseDate": "2026-08-20",
     "notes": "Trusted entries are allowlist evidence only; compromised entries take precedence."
   },
   "trustedCertificates": [
@@ -1236,6 +1236,76 @@
       "status": "compromised",
       "label": "Adobe Photoshop 26.1.dmg",
       "source": "Confirmed stealer-malware hash corpus submitted 2026-07-12"
+    },
+    {
+      "type": "dmg-sha256",
+      "hash": "659b1c995f4813bce2e1089b770fe4a72071f6de756945892e3920f3fe2ed692",
+      "status": "compromised",
+      "label": "Malicious Ableton Live 12 Suite v12.4.3 U2B macOS.dmg outer container",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "pkg-sha256",
+      "hash": "a2e9ba4c4e8410ac6c8d7b1326735a75ce96776fdf8f5e31173c02489c58c641",
+      "status": "compromised",
+      "label": "Malicious Ableton Live 12 Suite v12.4.3 U2B macOS Patch.pkg nested package",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "dmg-sha256",
+      "hash": "4ccb76cedc3508e40f041694efcb7996067ef6a3ccba2dd917354cc971c23f89",
+      "status": "compromised",
+      "label": "Malicious Microsoft_365_and_Office_16.112.26081010.dmg",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "pkg-sha256",
+      "hash": "feb1e99197f216ea39800ff3672c05b838e909c31ef2c7d20d166c53754f300b",
+      "status": "compromised",
+      "label": "Malicious Microsoft_Office_LTSC_2024_VL_Serializer.pkg",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "dmg-sha256",
+      "hash": "492394a8ea9ea6c610f75014659b21c8d24ecd46dae6dff905996ecf892914a2",
+      "status": "compromised",
+      "label": "Malicious Archicad v29.2.0 INT_RU ARM.dmg outer container",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "pkg-sha256",
+      "hash": "47c8745f973b692a1c5116bff581baaa397e13b3f4836dc434345bc0aac2be55",
+      "status": "compromised",
+      "label": "Malicious Archicad v29.2.0 ARM Patch.pkg",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "dmg-sha256",
+      "hash": "74547770894edeac338423ab0a5c6e848a07ebc1afb671620684206a669c463e",
+      "status": "compromised",
+      "label": "Malicious Adobe Illustrator v30.4.0 Adobe Activation Tool.dmg outer container",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "pkg-sha256",
+      "hash": "8501f0eb06761e74eab0bebabbc22b8d46377173a21063b39724e169aff432d2",
+      "status": "compromised",
+      "label": "Malicious Creative Cloud Desktop v6.8.1 UB package associated with Adobe activation-tool delivery",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "dmg-sha256",
+      "hash": "b67fb12dcf034062b6b76e9a8b0711270686fe1a5c340582ce1c905aaa95e650",
+      "status": "compromised",
+      "label": "Malicious Adobe Illustrator v30.5.1 Adobe Activation Tool.dmg outer container",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
+    },
+    {
+      "type": "pkg-sha256",
+      "hash": "f8e9d73df8e82ca4c9f0459e4559f1e716748f80e45e6f8851cc48fca9e3b9b7",
+      "status": "compromised",
+      "label": "Malicious nested Creative Cloud Desktop v6.8.1 UB package from Adobe Illustrator v30.5.1 delivery",
+      "source": "Confirmed malicious SHA-256 corpus submitted 2026-08-20"
     }
   ]
 }
