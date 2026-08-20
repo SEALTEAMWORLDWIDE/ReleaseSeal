@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 (29)
+
+- Strengthened app-bundle integrity validation with recursive verification of nested code and sealed resources
+- Preserved Deep Scan as a separate internal signer inventory while applying recursive integrity verification to every app scan
+- Hardened human-readable reports against misleading line breaks and control characters in hostile filenames
+- Added 10 confirmed malicious SHA-256 hashes covering DMG and PKG artifacts
+- Expanded the evidence database to 54 certificate records, 1 tracked-file policy, 1 exact verified artifact, and 112 compromised hashes
+
 ## 1.2.0 (28)
 
 - Added a gold OUTER SEAL VERIFIED indicator when the selected artifact is authenticated by a recognized valid signature or exact verified-artifact hash
